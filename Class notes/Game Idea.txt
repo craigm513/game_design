@@ -1,0 +1,11 @@
+Game 1: Top Dog (platformer)
+Description: Start out as a douchound. The goal is to become the best(top) dog by being faster, marking a larger area, or collecting bones/treats.
+
+Game 2: Robot Factory (point and click)
+Description: Cookie clicker clone. You have one robot that is slow at working on the assembly line. After each shift, you earn points/currency that can be used to enhance/improve your robot. Improvements such as faster gears/motors, 2-handed, etc. Once the robot has reached the maximum upgrade level, you can sell it for a better one. New robot has better starting stats, more upgrade slots, and functions as pristege/new game plus. End goal?
+
+Game 3: Unknown
+Description: This game shall include collecting items, platformer timing, and currency/trading.
+Additional ideals: An underwater/scuba fetching game. You must surface occationally or you will die/respawn. Trade underwater treasures for upgrades that include: tank upgrade for longer bottom time, fin upgrade for faster swimming, and advanced exposure suit to bypass hazards. A flashlight can be recovered to access underwater cave system. End game? Hidden temple? Underwater secret/found macguffin.
+
+*What would it take to include a conversation mechanic like Mass Effect?
