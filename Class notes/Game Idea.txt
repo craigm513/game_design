@@ -8,4 +8,10 @@ Game 3: Unknown
 Description: This game shall include collecting items, platformer timing, and currency/trading.
 Additional ideals: An underwater/scuba fetching game. You must surface occationally or you will die/respawn. Trade underwater treasures for upgrades that include: tank upgrade for longer bottom time, fin upgrade for faster swimming, and advanced exposure suit to bypass hazards. A flashlight can be recovered to access underwater cave system. End game? Hidden temple? Underwater secret/found macguffin.
 
+Game 4: Tower Defense (point and click)
+2d level design, static input, static output.
+Click to spawn tower, only valid areas allowed.
+What is the theme?
+
 *What would it take to include a conversation mechanic like Mass Effect?
+
