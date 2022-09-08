@@ -1,10 +1,13 @@
 Game 1: Top Dog (platformer)
 Description: Start out as a douchound. The goal is to become the best(top) dog by being faster, marking a larger area, or collecting bones/treats.
 
-Game 2: Robot Factory (point and click)
-Description: Cookie clicker clone. You have one robot that is slow at working on the assembly line. After each shift, you earn points/currency that can be used to enhance/improve your robot. Improvements such as faster gears/motors, 2-handed, etc. Once the robot has reached the maximum upgrade level, you can sell it for a better one. New robot has better starting stats, more upgrade slots, and functions as pristege/new game plus. End goal?
+Game 2: Tree Clicker (point and click)
+Description: Cookie clicker clone. You have one tree that is slowly growing with each click. Once total (lifetime) clicks exceeds a certian amount, the sprit is updated to be bigger. The biggest is growing beyond the screen. Auto-clickers are available at the cost of clicks. The end goal would be to reach the tallest size and prestige. Prestige will move the tree to the background, create a new tree and start over but this time will a global multiplier.
 
-Game 3: Unknown
+Game 2(variant): Zombie Clicker (point and click)
+Description: Cookie clicker clone. Clicking shoots a gun at a zombie. Auto-clickers add other shooters and bigger guns. Zombies are always coming. The gun would have 2 images: firing, and not firing. Click = firing. The zombies will have 3 images: shuffle-left, suffle-right, and dead. Alternating between shuffle-left/right gives the sense of movement. Bonuses grenades can whip the screen clear of zombies. The durability of the barracade could be an added element. Minimum viable game: click gun to shoot zombies. Expand the game with auto-clickers and variable zombie types(easy=3, hard=10 shots to kill).
+
+Game 3: Unknown (platformer)
 Description: This game shall include collecting items, platformer timing, and currency/trading.
 Additional ideals: An underwater/scuba fetching game. You must surface occationally or you will die/respawn. Trade underwater treasures for upgrades that include: tank upgrade for longer bottom time, fin upgrade for faster swimming, and advanced exposure suit to bypass hazards. A flashlight can be recovered to access underwater cave system. End game? Hidden temple? Underwater secret/found macguffin.
 
