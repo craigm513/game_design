@@ -1,0 +1,43 @@
+Lets talk about IP
+We will have to use assests from somewhere else because there is just not enough time during the class to create all our new assests.
+
+Creative commons,
+
+When you are out there ripping assests, make sure you are not using anything that needs a license.
+
+Mentioned:
+White Bat audio on youtube
+Audacity for editting audio files
+GIMP - GNU Image Manipulation Program
+Thinkercad - Create 3D digital designs with online CAD
+
+Crediting IP you game yses:
+For ANY assets, you must give a credit to the source.
+
+Most sources will tell you how to credit them. If so, do it the way they tell you.
+If not, create a credit giving the creator's identity, the name of the work, the URL you used to obtain it, and the kind of license you have to use it.
+
+-> You don't have to pay for anything
+-> Make sure any license includes derivative work
+
+"In the Old days"
+Before online stores, and the internet.
+How did you get a game? Hardware was leased and the software was included for free.
+Software source code was published in books to be typed by the end user.
+
+The Adv Gen is not a game engine. It is more of a compiler.
+
+Event based - Set of events, waiting on input from user
+Time based - Set of frames, uses the process loop | do shit then render
+
+Game project has to be a single player game.
+
+Download the GoDot project from the Professor and run it. 
+
+In GODOT, Project -> Project Settings -> Input Map
+
+Get together with the team and: 
+setup a repo on GitHub
+start weekly reports
+
+Will we be able to use templates? Yes
