@@ -1,0 +1,29 @@
+Today is the first day of presenting. Jaedon(Jdone) will be presenting for us.
+
+Order of today: 1, 4, 3, 2 
+
+How to impress... make a demo.
+
+The best demo is a completed game, with a menu system, scores, etc.
+
+2022 Sep 22 Action Items:
+team name-
+meeting(weekly)-
+GitHub host-
+Who will report next-
+what kind of game-
+what skills everyone has-
+
+Make a sample credits for next class.
+
+Competition: 
+  Castlevania - A, 
+  MegaMan - D, 
+  Mario Party - C, 
+  Isometric/2d boss rush - B
+  
+Weekly reports will be posted and submitted on canvas.
+
+15 minute restriction on demo day.
+
+Professor explained how platformer games are structured. 
