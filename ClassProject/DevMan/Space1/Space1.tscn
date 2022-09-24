@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Space1/GM_spriteFrame.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Space1/backgrounds/SP_01/space02.png" type="Texture" id=2]
+
+[node name="SpaceLevel" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( 810, 214 )
+frames = ExtResource( 1 )
+animation = "GM_blocking"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+stretch_mode = 2

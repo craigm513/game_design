@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+func _on_CreditsButton_pressed():
+    get_tree().change_scene(\"res://Credits.tscn\")
+
+func _on_StartButton_pressed():
+    get_tree().change_scene(\"res://Space.tscn\")
+"
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 2.0
+margin_right = 1.0
+margin_bottom = 2.0
+
+[node name="CreditsButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -97.0
+margin_top = 40.0
+margin_right = 106.0
+margin_bottom = 106.0
+text = "Credits"
+
+[node name="StartButton" type="Button" parent="."]
+margin_left = 422.0
+margin_top = 247.0
+margin_right = 614.0
+margin_bottom = 322.0
+text = "Start"
+script = SubResource( 1 )
+
+[connection signal="pressed" from="CreditsButton" to="StartButton" method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_StartButton_pressed"]
