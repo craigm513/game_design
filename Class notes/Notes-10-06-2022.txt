@@ -1,0 +1,9 @@
+Showcased Godot 2022:
+  Apps and Tools
+  mobile games
+  Desktop games
+
+Student question: custom engine v COTS engine. Answer: it depends.
+
+Order for presenters: 1, 2, 4, 3. Leo presented for us.
+
