@@ -109,9 +109,9 @@ func add_line():
         section_next = true
 
 
-func _unhandled_input(event):
+func _input(event):
     if event.is_action_pressed("ui_cancel"):
-        finish()
+        get_tree().change_scene("res://MainMenu/MainMenu.tscn")
     if event.is_action_pressed("ui_down") and !event.is_echo():
         speed_up = true
     if event.is_action_released("ui_down") and !event.is_echo():

@@ -14,6 +14,6 @@ func _ready():
 #func _process(delta):
 #    pass
 
-func _input( event: InputEvent ) -> void :
+func _input(event):
     if event.is_action_pressed( "ui_cancel" ) :
-      get_tree().quit( 0 )
+      get_tree().change_scene("res://MainMenu/MainMenu.tscn")

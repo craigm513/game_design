@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Small-Smiling-When-He-Hits-Me.png-7fc2fbde341c6677f244a497f41ad568.stex"
+path="res://.import/Small-Smiling-When-He-Hits-Me.png-586239036291e615ad2a7dd1b476ad19.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Small-Smiling-When-He-Hits-Me.png"
-dest_files=[ "res://.import/Small-Smiling-When-He-Hits-Me.png-7fc2fbde341c6677f244a497f41ad568.stex" ]
+source_file="res://WithTime1/Devman/assets/player/Small-Smiling-When-He-Hits-Me.png"
+dest_files=[ "res://.import/Small-Smiling-When-He-Hits-Me.png-586239036291e615ad2a7dd1b476ad19.stex" ]
 
 [params]
 

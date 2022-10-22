@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Large-Turned-Away.png-c0162be74ad2c435ebb3c7abf6b279c9.stex"
+path="res://.import/Large-Turned-Away.png-e6fb2ca976093c69144b8a78e2fb68ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Large-Turned-Away.png"
-dest_files=[ "res://.import/Large-Turned-Away.png-c0162be74ad2c435ebb3c7abf6b279c9.stex" ]
+source_file="res://WithTime1/Devman/assets/player/Large-Turned-Away.png"
+dest_files=[ "res://.import/Large-Turned-Away.png-e6fb2ca976093c69144b8a78e2fb68ab.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Small-Back-Turned.png-5bc561234a3d952016d4c1c815845850.stex"
+path="res://.import/Small-Back-Turned.png-28cf91fc1b53f2ea941d0343a7703083.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Small-Back-Turned.png"
-dest_files=[ "res://.import/Small-Back-Turned.png-5bc561234a3d952016d4c1c815845850.stex" ]
+source_file="res://WithTime1/Devman/assets/player/Small-Back-Turned.png"
+dest_files=[ "res://.import/Small-Back-Turned.png-28cf91fc1b53f2ea941d0343a7703083.stex" ]
 
 [params]
 

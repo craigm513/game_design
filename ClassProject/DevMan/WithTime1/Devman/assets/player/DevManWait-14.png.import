@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DevManWait-14.png-7b1f6606aeea901af3aca41cc54f3f89.stex"
+path="res://.import/DevManWait-14.png-4754c3ed707fc4fbda590a58c99b5a11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/DevManWait-14.png"
-dest_files=[ "res://.import/DevManWait-14.png-7b1f6606aeea901af3aca41cc54f3f89.stex" ]
+source_file="res://WithTime1/Devman/assets/player/DevManWait-14.png"
+dest_files=[ "res://.import/DevManWait-14.png-4754c3ed707fc4fbda590a58c99b5a11.stex" ]
 
 [params]
 
