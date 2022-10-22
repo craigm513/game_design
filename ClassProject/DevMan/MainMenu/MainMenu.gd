@@ -8,6 +8,6 @@ func _on_CreditsButton_pressed():
     print("on_CreditsButton_pressed")
     get_tree().change_scene("res://Credits/GodotCredits.tscn")
 
-func _input( event: InputEvent ) -> void :
+func _input(event):
     if event.is_action_pressed( "ui_cancel" ) :
       get_tree().quit( 0 )

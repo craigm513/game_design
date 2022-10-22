@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Devman"
-config/icon="res://icon.png"
+config/name="4392CSE"
+config/icon="res://Graveyard1/icon.png"
 
 [gui]
 
@@ -23,5 +23,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Graveyard1/default_env.tres"
