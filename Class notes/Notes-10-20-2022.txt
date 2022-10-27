@@ -23,6 +23,12 @@ Craig-
 	-boss logic
 	-sounds
 	-player logic
+Leo-
+	-background
+	-enemy logic/movement
+	-combining movement with audio created by Jaedon
+	-tile sets
+	-programming attack/weapon animations and physics 
 	
 what is your road map to attach it
 	-merge all forks to branchs from main
