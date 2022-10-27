@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Clouds.png-96b84015e592cf89e186793bc2e6138e.stex"
+path="res://.import/Clouds.png-b5e36c17f9395800dea18522b119ac13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BloodyMary/Clouds.png"
-dest_files=[ "res://.import/Clouds.png-96b84015e592cf89e186793bc2e6138e.stex" ]
+source_file="res://Graveyard1/Clouds.png"
+dest_files=[ "res://.import/Clouds.png-b5e36c17f9395800dea18522b119ac13.stex" ]
 
 [params]
 

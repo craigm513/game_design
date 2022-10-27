@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GY1.png-f8ad162765b70b80d1d6e1cce0528455.stex"
+path="res://.import/GY1.png-f5ec9295a38ac0fa60663fd9a56a4feb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BloodyMary/GY1.png"
-dest_files=[ "res://.import/GY1.png-f8ad162765b70b80d1d6e1cce0528455.stex" ]
+source_file="res://Graveyard1/GY1.png"
+dest_files=[ "res://.import/GY1.png-f5ec9295a38ac0fa60663fd9a56a4feb.stex" ]
 
 [params]
 

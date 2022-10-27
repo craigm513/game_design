@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stepping.png-297db9182587349644cf09b6628533b7.stex"
+path="res://.import/Stepping.png-a52c1558661e26f205361f54474dffcf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BloodyMary/Stepping.png"
-dest_files=[ "res://.import/Stepping.png-297db9182587349644cf09b6628533b7.stex" ]
+source_file="res://Graveyard1/Stepping.png"
+dest_files=[ "res://.import/Stepping.png-a52c1558661e26f205361f54474dffcf.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bat-NESW.png-1a8c2f3bf617e52fa4574d260c9ea9d2.stex"
+path="res://.import/bat-NESW.png-1eb2317196b35d686342a0ccca32d427.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BloodyMary/bat-NESW.png"
-dest_files=[ "res://.import/bat-NESW.png-1a8c2f3bf617e52fa4574d260c9ea9d2.stex" ]
+source_file="res://Graveyard1/bat-NESW.png"
+dest_files=[ "res://.import/bat-NESW.png-1eb2317196b35d686342a0ccca32d427.stex" ]
 
 [params]
 

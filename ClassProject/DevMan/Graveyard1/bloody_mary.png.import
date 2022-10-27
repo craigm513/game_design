@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bloody_mary.png-85fb8c1fa35e7dc51474e86e53962fee.stex"
+path="res://.import/bloody_mary.png-581ca910b6746507c0743fd66f3e7984.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BloodyMary/bloody_mary.png"
-dest_files=[ "res://.import/bloody_mary.png-85fb8c1fa35e7dc51474e86e53962fee.stex" ]
+source_file="res://Graveyard1/bloody_mary.png"
+dest_files=[ "res://.import/bloody_mary.png-581ca910b6746507c0743fd66f3e7984.stex" ]
 
 [params]
 
