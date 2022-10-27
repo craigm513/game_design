@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DVRun10.png-5a858a9d70c9a59e8a28ebb1908ec00d.stex"
+path="res://.import/DVRun10.png-a117c728ce992234ab772ee5b2e9a193.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/DevManRun/DVRun10.png"
-dest_files=[ "res://.import/DVRun10.png-5a858a9d70c9a59e8a28ebb1908ec00d.stex" ]
+source_file="res://WithTime1/Devman/assets/player/DevManRun/DVRun10.png"
+dest_files=[ "res://.import/DVRun10.png-a117c728ce992234ab772ee5b2e9a193.stex" ]
 
 [params]
 
