@@ -15,11 +15,8 @@ func _on_SpaceButton_pressed():
     get_tree().change_scene("res://Space1/Space1.tscn")
 
 func _on_WithTimeButton_pressed():
-<<<<<<< Updated upstream
-    get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
-=======
+    #get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
     get_tree().change_scene("res://scenes/withTime.tscn")
->>>>>>> Stashed changes
 
 func _on_OptionsButton_pressed():
     get_tree().change_scene("res://MainMenu/MainMenu.tscn")
