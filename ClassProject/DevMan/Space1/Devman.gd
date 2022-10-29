@@ -7,11 +7,11 @@ const JUMPFORCE = -1100
 
 func _physics_process(_delta):
     
-    if Input.is_action_pressed("ui_right"):
+    if Input.is_action_pressed("right"):
         velocity.x = SPEED
         $Sprite.flip_h = false
         $Sprite.play("walk")
-    elif Input.is_action_pressed("ui_left"):
+    elif Input.is_action_pressed("left"):
         velocity.x = -SPEED
         $Sprite.flip_h = true
         $Sprite.play("walk")
@@ -24,7 +24,7 @@ func _physics_process(_delta):
     
     velocity.y = velocity.y + GRAVITY
     
-    if Input.is_action_just_pressed("ui_up") and is_on_floor():
+    if Input.is_action_just_pressed("jump") and is_on_floor():
         velocity.y = JUMPFORCE
     
     velocity = move_and_slide(velocity,Vector2.UP)
