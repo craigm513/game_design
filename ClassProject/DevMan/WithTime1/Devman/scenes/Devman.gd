@@ -10,9 +10,11 @@ func _physics_process(_delta):
 	if Input.is_action_pressed("right"):
 		velocity.x = SPEED
 		$Sprite.play("walk")
+		$Sprite.flip_h = false
 	elif Input.is_action_pressed("left"):
 		velocity.x = -SPEED
 		$Sprite.play("walk")
+		$Sprite.flip_h = true
 	else:
 		$Sprite.play("idle")
 		
@@ -27,4 +29,4 @@ func _physics_process(_delta):
 	
 	velocity = move_and_slide(velocity,Vector2.UP)
 
-    velocity.x = lerp(velocity.x,0,0.2)
+	velocity.x = lerp(velocity.x,0,0.2)
