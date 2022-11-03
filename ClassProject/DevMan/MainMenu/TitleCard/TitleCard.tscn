@@ -41,6 +41,7 @@ anims/TitleCard = SubResource( 1 )
 position = Vector2( 908, 551 )
 frames = SubResource( 2 )
 animation = "TitleCard"
+frame = 15
 playing = true
 script = ExtResource( 19 )
 
