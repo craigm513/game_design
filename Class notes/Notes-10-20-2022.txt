@@ -1,0 +1,35 @@
+Todo list for the rest of the semester
+Jaedon- Implement
+	-background 
+	-music
+	-sound effects
+	-enemy logic
+	-boss logic
+Jay- 
+	-background
+	-enemy & boss logic
+	-ground tile sets
+	-music
+Cail-
+	-make get-hit and die animation
+	-background
+	-enemy logic
+	-boss logiv
+	-sounds
+	-player logic
+Craig-
+	-background
+	-enemy logic
+	-boss logic
+	-sounds
+	-player logic
+Leo-
+	-background
+	-enemy logic/movement
+	-combining movement with audio created by Jaedon
+	-tile sets
+	-programming attack/weapon animations and physics 
+	
+what is your road map to attach it
+	-merge all forks to branchs from main
+	-do the rest
