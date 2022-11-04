@@ -45,8 +45,14 @@ script/source = "extends Control
 func _on_StartButton_pressed():
     get_tree().change_scene(\"res://LevelSelect/LevelSelect1.tscn\")
 
+func _on_OptionsButton_pressed():
+    get_tree().change_scene(\"res://Options/Options.tscn\")
+
 func _on_CreditsButton_pressed():
     get_tree().change_scene(\"res://Credits/GodotCredits.tscn\")
+
+func _on_QuitButton_pressed():
+      get_tree().quit( 0 )
 
 func _input( event: InputEvent ) -> void :
     if event.is_action_pressed(\"ui_cancel\") :
@@ -77,16 +83,16 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 27
+frame = 25
 playing = true
 
 [node name="ButtonLayer" type="Node" parent="."]
 
 [node name="StartButton" type="Button" parent="ButtonLayer"]
-margin_left = 833.0
-margin_top = 450.0
-margin_right = 1087.0
-margin_bottom = 527.0
+margin_left = 830.0
+margin_top = 394.0
+margin_right = 1084.0
+margin_bottom = 471.0
 custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -95,16 +101,26 @@ custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "Start"
 script = SubResource( 1 )
 
+[node name="OptionsButton" type="Button" parent="ButtonLayer"]
+margin_left = 830.0
+margin_top = 481.0
+margin_right = 1085.0
+margin_bottom = 561.0
+text = "Options"
+
 [node name="CreditsButton" type="Button" parent="ButtonLayer"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -128.0
-margin_top = 22.0
-margin_right = 128.0
-margin_bottom = 102.0
+margin_left = 830.0
+margin_top = 569.0
+margin_right = 1086.0
+margin_bottom = 649.0
 text = "Credits"
+
+[node name="QuitButton" type="Button" parent="ButtonLayer"]
+margin_left = 830.0
+margin_top = 660.0
+margin_right = 1085.0
+margin_bottom = 740.0
+text = "Quit"
 
 [connection signal="pressed" from="ButtonLayer/StartButton" to="ButtonLayer/StartButton" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="ButtonLayer/CreditsButton" to="ButtonLayer/StartButton" method="_on_CreditsButton_pressed"]

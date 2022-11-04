@@ -11,7 +11,7 @@
 position = Vector2( 438, 216 )
 frames = ExtResource( 1 )
 animation = "GM_melee"
-frame = 9
+frame = 8
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
