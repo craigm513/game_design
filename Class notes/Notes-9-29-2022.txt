@@ -1,0 +1,11 @@
+This will be a short class because the professor needs to leave early to attend a meeting.
+
+Discussed IDEs, be sure to set: "tabs = 2 spaces" 
+
+Presenting order: 4, 2, 3, 1
+4 - working main menu, credits, character design, and more.
+2 - designed story
+3 - created GoogleDoc, and decided a theme
+1 - worked on story, credits, and chaaracter movement
+
+Showed particles, and scrolling

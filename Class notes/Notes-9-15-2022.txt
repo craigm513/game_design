@@ -1,0 +1,17 @@
+Showed game video for One Night at the Imperial Motel from GoDot Game Jam 11
+Showed GoDot Game Jam judging criteria.
+
+Majority of our game will be created between October and November.
+Major Roles: Coding, Art, and Sound.
+
+Discussed the use of sprites, layers, and scrolling backgrounds.
+
+Showed simple platformer with player(blue square), enemies(green squares).
+
+Determine what kind of game you want to do and scope it.
+
+Demo day (final exam) is December 8th.
+
+One aspect of the weekly report freaks people out: candid opinion on eachother person in the group.
+
+End of class, team meeting.
