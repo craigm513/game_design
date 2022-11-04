@@ -56,16 +56,16 @@ margin_right = 938.0
 margin_bottom = 958.0
 text = "With Time"
 
-[node name="OptionsButton" type="Button" parent="Node"]
+[node name="BackButton" type="Button" parent="Node"]
 margin_left = 970.0
 margin_top = 758.0
 margin_right = 1870.0
 margin_bottom = 958.0
-text = "Options"
+text = "Back"
 
 [connection signal="pressed" from="Node/GraveYardButton" to="." method="_on_GraveYardButton_pressed"]
 [connection signal="pressed" from="Node/ThemeParkButton" to="." method="_on_ThemeParkButton_pressed"]
 [connection signal="pressed" from="Node/DeepSeaButton" to="." method="_on_DeepSeaButton_pressed"]
 [connection signal="pressed" from="Node/SpaceButton" to="." method="_on_SpaceButton_pressed"]
 [connection signal="pressed" from="Node/WithTimeButton" to="." method="_on_WithTimeButton_pressed"]
-[connection signal="pressed" from="Node/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="Node/BackButton" to="." method="_on_OptionsButton_pressed"]
