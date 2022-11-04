@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DMJNoGun6.png-5f76a76fdda2ad56f2ff091aeab9a828.stex"
+path="res://.import/DMJNoGun6.png-c528f90e9158bf7edeadf0dd8dcde033.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/DevManJump/DMJNoGun6.png"
-dest_files=[ "res://.import/DMJNoGun6.png-5f76a76fdda2ad56f2ff091aeab9a828.stex" ]
+source_file="res://WithTime1/Devman/assets/player/DevManJump/DMJNoGun6.png"
+dest_files=[ "res://.import/DMJNoGun6.png-c528f90e9158bf7edeadf0dd8dcde033.stex" ]
 
 [params]
 
