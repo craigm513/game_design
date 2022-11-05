@@ -17,7 +17,7 @@ func _on_SpaceButton_pressed():
 func _on_WithTimeButton_pressed():
     get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 
-func _on_OptionsButton_pressed():
+func _on_BackButton_pressed():
     get_tree().change_scene("res://MainMenu/MainMenu.tscn")
 
 func _input(event):
