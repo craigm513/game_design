@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tileYellow_12.png-ffdfba5e071fdc2bf1b7cdc941f0e365.stex"
+path="res://.import/tileYellow_12.png-c426390b6ce2ea29586f9fa1439ea049.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WorldTiles/tileYellow_12.png"
-dest_files=[ "res://.import/tileYellow_12.png-ffdfba5e071fdc2bf1b7cdc941f0e365.stex" ]
+source_file="res://WithTime1/Devman/assets/WorldTiles/tileYellow_12.png"
+dest_files=[ "res://.import/tileYellow_12.png-c426390b6ce2ea29586f9fa1439ea049.stex" ]
 
 [params]
 
