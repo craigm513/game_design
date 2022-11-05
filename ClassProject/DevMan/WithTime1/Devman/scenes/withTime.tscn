@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://GreenYellow_tileset.tres" type="TileSet" id=1]
-[ext_resource path="res://scenes/Devman.tscn" type="PackedScene" id=2]
+[ext_resource path="res://WithTime1/Devman/GreenYellow_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://WithTime1/Devman/scenes/Devman.tscn" type="PackedScene" id=2]
 
 [node name="withTimeLevel" type="Node2D"]
 position = Vector2( 51, 37 )
