@@ -1,0 +1,17 @@
+Does the main branch run your latest commit?
+
+What will you be working on this next week?
+
+Craig - Yes to main; I will be working on getting the buttons fully functional. Also, I will continue working on my level. I am prioritizing the core game/framework over my own level.
+
+Cail - yes? to main; fix idle animation. Then work on Deep sea level.
+
+Jaedon - yes to main; going to add music to main menu, and final scene. Fix look of background on 6flags level.
+
+Jay'lon - Yes to main; going to add villian so when Devman running left the villians will chase. Craig suggested to focus on collusion detection (villian& devman and villians& bullet)
+
+Leo - no to main; working on path issues. Adding to WithTime level, and jump anime
+
+Note: 
+Please remove the root .import directory before commiting. This will cut down on the number of files and since the assests are re imported when you open the project, there is no need to CM the auto generated files.
+

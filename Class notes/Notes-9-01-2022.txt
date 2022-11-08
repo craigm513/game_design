@@ -1,0 +1,57 @@
+Second day of class
+
+Started with Youtube video of Spookware 
+Showcases ABG (Alpha Beta Gamer)
+
+What counts as inspiration v. stealing
+
+Every day I wake up thinking...
+
+Recap Publishing deals from last session because other students emailed questions.
+Publishing Deals from the Other Side (Publisher)
+
+More information regarding Outriders, put on Game Pass ASAP. Sales dropped on steam within the first month.
+
+Cargo Cult / T.P.I. -paper posted on Canvas
+
+Theory - theorize the program
+Practice -write the program
+Implementation -
+
+Talk is cheap, show me the code - Linus
+Ideas are worthless unless you do something
+
+Complete Games, MPGs
+What makes up a COMPLETE game?
+
+Minimal Viable Product (MVP) - a control against the issue of feature creep
+
+Minimal Playable Game (MPG) - the minimal game that can be played
+
+----- After the break -----
+Assigned to team D
+
+Regarding sales:
+The barrier to sales goes way down the cheaper something is. It's a non-linear function.
+
+www.steamdb.info
+
+Cost = total cost to develop the game, publish it, market / promote it.
+Revenue = how much revenue can the game be expected to generate.
+
+2 ways = minimize cost or maximize revenue
+Unlikely because both are directly proportional.
+
+Games that pump out sequels frequently targeting their fan-base.
+Characteristics of this kind of game include...
+
+"niche" status means the Total Availible market is not big enough to even be interesting to the larger organizations.
+
+Franchises that just keep pumping out "new" versions that are the "same" game with just enough difference to avoid fraud.
+The players have come to expect a certain type of game which is what keeps bringing them back.
+
+STEAM free games - look at them for ideas
+XMines - predates minesweeper by at least 4 years (professor helped write it)
+Game mechanics are not IP. Be careful about look and feel. The reasonable person on the street would CONFUSE with someone else's TM or (R).
+You can't clone look and feel.
+
