@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#27.png" type="Texture" id=1]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#28.png" type="Texture" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#18.png" type="Texture" id=28]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#23.png" type="Texture" id=29]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#25.png" type="Texture" id=30]
+[ext_resource path="res://Options/Options.gd" type="Script" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -58,7 +59,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 20
+frame = 7
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -67,3 +68,6 @@ margin_top = 758.0
 margin_right = 1870.0
 margin_bottom = 958.0
 text = "Back"
+script = ExtResource( 31 )
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]

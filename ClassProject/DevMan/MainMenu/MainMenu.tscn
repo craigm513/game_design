@@ -83,7 +83,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 25
+frame = 28
 playing = true
 
 [node name="ButtonLayer" type="Node" parent="."]
@@ -123,4 +123,6 @@ margin_bottom = 740.0
 text = "Quit"
 
 [connection signal="pressed" from="ButtonLayer/StartButton" to="ButtonLayer/StartButton" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="ButtonLayer/OptionsButton" to="ButtonLayer/StartButton" method="_on_OptionsButton_pressed"]
 [connection signal="pressed" from="ButtonLayer/CreditsButton" to="ButtonLayer/StartButton" method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="ButtonLayer/QuitButton" to="ButtonLayer/StartButton" method="_on_QuitButton_pressed"]
