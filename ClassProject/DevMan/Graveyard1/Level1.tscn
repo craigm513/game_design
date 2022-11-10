@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Graveyard1/Assets/FloorTILE.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Graveyard1/Assets/DevMan.tscn" type="PackedScene" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://Graveyard1/Assets/Villians/witch.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Graveyard1/Assets/Villians/Vampire.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Graveyard1/Assets/GraveyardTileset/png/Objects/Tree.png" type="Texture" id=12]
+[ext_resource path="res://Graveyard1/Assets/GraveyardTileset/FT.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Graveyard1/Assets/Hero/DevManTest.tscn" type="PackedScene" id=14]
 
 [node name="GraveYard" type="Node2D"]
 
@@ -34,6 +36,8 @@ texture = ExtResource( 4 )
 [node name="Bone(3)4" type="Sprite" parent="TileMap"]
 position = Vector2( 812.996, 798.004 )
 texture = ExtResource( 4 )
+
+[node name="TileMap" parent="TileMap" instance=ExtResource( 13 )]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 0 )
@@ -99,3 +103,6 @@ position = Vector2( 1890, 458 )
 position = Vector2( -236, 316.25 )
 scale = Vector2( 1.41259, 1.61715 )
 texture = ExtResource( 12 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 358, 98 )
