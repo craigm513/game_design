@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Quincas Moreira - Robot City.mp3-2ed547b05eaa02e3660fcf7d88017af7.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Quincas Moreira - Robot City.mp3"
+dest_files=[ "res://.import/Quincas Moreira - Robot City.mp3-2ed547b05eaa02e3660fcf7d88017af7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
