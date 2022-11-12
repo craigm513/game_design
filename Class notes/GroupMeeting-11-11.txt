@@ -1,0 +1,27 @@
+Jay - 
+	enemy behavior 
+	player projectile
+	audio from Jaedon
+
+Jaedon -
+	complete options page NLT 11/12
+	sfx for shooting, jumping
+	boss behavior
+	
+Leo -
+	add mini villians
+	add boss
+	shooting with weapon
+	sounds
+	dynamic movement in air
+
+Cail -
+	mpg - needs? 
+	fix animations
+	finalize Victory image with level specific items
+
+Craig -
+	level select screen targets
+	cheat code to Victory page
+	Create Victory page
+	
