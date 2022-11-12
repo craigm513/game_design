@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Monplaisir - Soundtrack(1).mp3-9d3acca512d24f1120942600689c5002.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Monplaisir - Soundtrack(1).mp3"
+dest_files=[ "res://.import/Monplaisir - Soundtrack(1).mp3-9d3acca512d24f1120942600689c5002.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
