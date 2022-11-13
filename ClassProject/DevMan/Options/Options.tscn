@@ -55,12 +55,12 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BackgroundLayer/CanvasLayer"]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer/AnimationPlayer"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer"]
 position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 14
+frame = 18
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -75,7 +75,17 @@ script = ExtResource( 31 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]
 stream = ExtResource( 32 )
-volume_db = 15.592
 autoplay = true
 
+[node name="Master Volume Slider" type="HSlider" parent="."]
+margin_left = 1007.0
+margin_top = 500.0
+margin_right = 1807.0
+margin_bottom = 602.0
+min_value = -80.0
+max_value = 0.0
+step = 0.1
+script = ExtResource( 31 )
+
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]
+[connection signal="value_changed" from="Master Volume Slider" to="Master Volume Slider" method="MasterSlideChange"]
