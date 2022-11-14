@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tile (2).png-7eb6969483f14cb27e636d0e83a79122.stex"
+path="res://.import/Tile (2).png-e49f82b8964d5e95bc959dd5ff996c52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/Tile (2).png"
-dest_files=[ "res://.import/Tile (2).png-7eb6969483f14cb27e636d0e83a79122.stex" ]
+source_file="res://Graveyard1/Assets/Tiles/Tile (2).png"
+dest_files=[ "res://.import/Tile (2).png-e49f82b8964d5e95bc959dd5ff996c52.stex" ]
 
 [params]
 

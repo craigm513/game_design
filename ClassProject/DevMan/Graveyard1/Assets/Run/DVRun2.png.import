@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DVRun2.png-7fffea9424f3eb4859e9f2024c3e45ff.stex"
+path="res://.import/DVRun2.png-bca23d7ea34f2e3194cec00b9f1dff58.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Run/DVRun2.png"
-dest_files=[ "res://.import/DVRun2.png-7fffea9424f3eb4859e9f2024c3e45ff.stex" ]
+source_file="res://Graveyard1/Assets/Run/DVRun2.png"
+dest_files=[ "res://.import/DVRun2.png-bca23d7ea34f2e3194cec00b9f1dff58.stex" ]
 
 [params]
 
