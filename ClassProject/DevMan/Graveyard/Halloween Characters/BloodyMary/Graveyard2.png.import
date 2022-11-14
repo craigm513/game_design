@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Graveyard2.png-331975d2df93586460e2c59bda5d82f1.stex"
+path="res://.import/Graveyard2.png-7d39fe4edf738e52ff40ef08e753da1b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/BloodyMary/Graveyard2.png"
-dest_files=[ "res://.import/Graveyard2.png-331975d2df93586460e2c59bda5d82f1.stex" ]
+source_file="res://Graveyard/Halloween Characters/BloodyMary/Graveyard2.png"
+dest_files=[ "res://.import/Graveyard2.png-7d39fe4edf738e52ff40ef08e753da1b.stex" ]
 
 [params]
 

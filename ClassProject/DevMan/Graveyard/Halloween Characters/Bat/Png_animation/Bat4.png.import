@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat4.png-d0a4e850c7e93f910ff72d0299873112.stex"
+path="res://.import/Bat4.png-2d97b1cfcae65e6d3c8ab84f021a53bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Bat/Png_animation/Bat4.png"
-dest_files=[ "res://.import/Bat4.png-d0a4e850c7e93f910ff72d0299873112.stex" ]
+source_file="res://Graveyard/Halloween Characters/Bat/Png_animation/Bat4.png"
+dest_files=[ "res://.import/Bat4.png-2d97b1cfcae65e6d3c8ab84f021a53bf.stex" ]
 
 [params]
 

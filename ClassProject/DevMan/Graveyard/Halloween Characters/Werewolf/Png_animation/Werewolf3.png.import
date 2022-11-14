@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Werewolf3.png-278fac1f998149025d23a197b667ee1b.stex"
+path="res://.import/Werewolf3.png-7fe5f0d57995a46a0d07370e48c45ace.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Werewolf/Png_animation/Werewolf3.png"
-dest_files=[ "res://.import/Werewolf3.png-278fac1f998149025d23a197b667ee1b.stex" ]
+source_file="res://Graveyard/Halloween Characters/Werewolf/Png_animation/Werewolf3.png"
+dest_files=[ "res://.import/Werewolf3.png-7fe5f0d57995a46a0d07370e48c45ace.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ghost3.png-ef4b823cccd060641a7af30f7409b79f.stex"
+path="res://.import/Ghost3.png-85da43f92bb3cb5318c286f4a67291ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Ghost/Png_animation/Ghost3.png"
-dest_files=[ "res://.import/Ghost3.png-ef4b823cccd060641a7af30f7409b79f.stex" ]
+source_file="res://Graveyard/Halloween Characters/Ghost/Png_animation/Ghost3.png"
+dest_files=[ "res://.import/Ghost3.png-85da43f92bb3cb5318c286f4a67291ed.stex" ]
 
 [params]
 
