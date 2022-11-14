@@ -95,3 +95,6 @@ func _physics_process(delta):
     if new_anim != anim:
         anim = new_anim
         ($Anim as AnimationPlayer).play(anim)
+        
+    if Input.is_action_just_pressed("ui_cancel"):
+        get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
