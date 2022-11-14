@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#27.png" type="Texture" id=1]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#28.png" type="Texture" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#23.png" type="Texture" id=29]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#25.png" type="Texture" id=30]
 [ext_resource path="res://Options/Options.gd" type="Script" id=31]
+[ext_resource path="res://Audio/Sound Effects/OptionsAudio.wav" type="AudioStream" id=32]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -54,12 +55,12 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BackgroundLayer/CanvasLayer"]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer/AnimationPlayer"]
 position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 1
+frame = 9
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -76,6 +77,7 @@ script = ExtResource( 31 )
 stream = ExtResource( 32 )
 volume_db = 15.592
 autoplay = true
+
 [node name="Audio Streams" type="Node" parent="Audio"]
 
 [node name="Music Audio Stream" type="AudioStreamPlayer" parent="Audio/Audio Streams"]
