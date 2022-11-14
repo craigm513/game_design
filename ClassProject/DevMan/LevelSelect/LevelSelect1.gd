@@ -6,7 +6,7 @@ func _on_GraveYardButton_pressed():
     get_tree().change_scene("res://Graveyard1/KinematicBody2D.tscn")
 
 func _on_ThemeParkButton_pressed():
-    get_tree().change_scene("res://6flags1/6flags1.tscn")
+    get_tree().change_scene("res://ThemePark/Scene/6flags1.tscn")
 
 func _on_DeepSeaButton_pressed():
     get_tree().change_scene("res://DeepSea1/DeepSea1.tscn")
@@ -26,4 +26,6 @@ func _input(event):
         get_tree().change_scene("res://MainMenu/MainMenu.tscn")
     if event.is_action_pressed( "ui_accept" ) :
         get_tree().change_scene("res://Space1/reference/Stage.tscn")
+    if event.is_action_pressed( "ui_end" ) :
+        get_tree().change_scene("res://Victory/Victory1.tscn")
     

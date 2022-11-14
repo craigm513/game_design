@@ -59,7 +59,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 25
+frame = 1
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -72,6 +72,10 @@ script = ExtResource( 31 )
 
 [node name="Audio" type="Node" parent="."]
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource( 32 )
+volume_db = 15.592
+autoplay = true
 [node name="Audio Streams" type="Node" parent="Audio"]
 
 [node name="Music Audio Stream" type="AudioStreamPlayer" parent="Audio/Audio Streams"]
@@ -126,20 +130,20 @@ rect_scale = Vector2( 4, 10 )
 text = "Master Volume"
 
 [node name="Music Volume Text" type="RichTextLabel" parent="Text"]
-margin_left = 554.0
-margin_top = 176.0
-margin_right = 662.0
-margin_bottom = 191.0
+margin_left = 565.0
+margin_top = 323.0
+margin_right = 673.0
+margin_bottom = 338.0
 rect_scale = Vector2( 4, 10 )
-text = "Master Volume"
+text = "Music Volume"
 
 [node name="Sound Effect Volume Text" type="RichTextLabel" parent="Text"]
-margin_left = 554.0
-margin_top = 176.0
-margin_right = 662.0
-margin_bottom = 191.0
+margin_left = 564.0
+margin_top = 472.0
+margin_right = 672.0
+margin_bottom = 487.0
 rect_scale = Vector2( 4, 10 )
-text = "Master Volume"
+text = "Sfx Volume"
 
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]
 [connection signal="value_changed" from="Audio/Volume Sliders/Master Volume Slider" to="Audio/Volume Sliders/Master Volume Slider" method="MasterSlideChange"]

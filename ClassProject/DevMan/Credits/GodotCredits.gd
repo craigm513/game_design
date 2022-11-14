@@ -25,28 +25,38 @@ var credits = [
         "A game by Decoders"
     ],[
         "Main Character Art",
+        "",
         "Cail Keeling"        
     ],[
-        "Main Menu",
-        "Craig Moritz"
-    ],[
-        "Theme park",
+        "Theme park level design",
+        "",
         "Jaedon Waller"
     ],[
-        "Graveyard",
+        "Graveyard level design",
+        "",
         "Ja\'lun Morris"
     ],[
-        "Deep sea",
-        "Cail Keeling"
-    ],[
-        "Space",
-        "Craig Moritz"
-    ],[
-        "With time",
+        "With time level design",
+        "",
         "Leonardo Hernandez"
     ],[
+        "Character movement and game physics",
+        "",
+        "Leonardo Hernandez", 
+        "Ja\'lun Morris"
+    ],[
+        "Main Menu, Level Select, Victory and Credits",
+        "",
+        "Craig Moritz"
+    ],[
+        "Music and Sfx",
+        "",
+        "Jaedon Waller"
+    ],[
         "Online resources from",
+        "",
         "www.spriters-resource.com"
+        
     ],[
         "Thanks for playing!"
     ]
@@ -54,6 +64,7 @@ var credits = [
 
 
 func _process(delta):
+# warning-ignore:shadowed_variable
     var scroll_speed = base_speed * delta
     
     if section_next:
@@ -92,6 +103,7 @@ func finish():
         # NOTE: This is called when the credits finish
         # - Hook up your code to return to the relevant scene here, eg...
         #get_tree().change_scene("res://scenes/MainMenu.tscn")
+# warning-ignore:return_value_discarded
         get_tree().change_scene("res://MainMenu/MainMenu.tscn")
 
 func add_line():
@@ -111,6 +123,7 @@ func add_line():
 
 func _input(event):
     if event.is_action_pressed("ui_cancel"):
+# warning-ignore:return_value_discarded
         get_tree().change_scene("res://MainMenu/MainMenu.tscn")
     if event.is_action_pressed("ui_down") and !event.is_echo():
         speed_up = true
