@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://BloodyMary/GY3.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
+
+[node name="Camera2D" type="Camera2D" parent="TileMap"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="G3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1000, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/G3"]
+position = Vector2( 512, 300 )
+scale = Vector2( 2.87207, 1 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1024, 400 )
