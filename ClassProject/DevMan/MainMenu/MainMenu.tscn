@@ -84,7 +84,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 12
+frame = 14
 playing = true
 
 [node name="ButtonLayer" type="Node" parent="."]
@@ -127,7 +127,6 @@ text = "Quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource( 31 )
-volume_db = 16.605
 autoplay = true
 
 [connection signal="pressed" from="ButtonLayer/StartButton" to="ButtonLayer/StartButton" method="_on_StartButton_pressed"]

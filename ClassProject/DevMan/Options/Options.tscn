@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#27.png" type="Texture" id=1]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#28.png" type="Texture" id=2]
@@ -31,7 +31,6 @@
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#23.png" type="Texture" id=29]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#25.png" type="Texture" id=30]
 [ext_resource path="res://Options/Options.gd" type="Script" id=31]
-[ext_resource path="res://Audio/Sound Effects/OptionsAudio.wav" type="AudioStream" id=32]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -55,7 +54,7 @@ color = Color( 0, 0, 0, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BackgroundLayer/CanvasLayer"]
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer/AnimationPlayer"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="BackgroundLayer/CanvasLayer"]
 position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
@@ -147,3 +146,6 @@ rect_scale = Vector2( 4, 10 )
 text = "Sfx Volume"
 
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]
+[connection signal="value_changed" from="Audio/Volume Sliders/Master Volume Slider" to="Audio/Volume Sliders/Master Volume Slider" method="MasterSlideChange"]
+[connection signal="value_changed" from="Audio/Volume Sliders/Music Volume Slider2" to="Audio/Volume Sliders/Music Volume Slider2" method="MasterSlideChange"]
+[connection signal="value_changed" from="Audio/Volume Sliders/Sound Effect Volume Slider3" to="Audio/Volume Sliders/Sound Effect Volume Slider3" method="MasterSlideChange"]
