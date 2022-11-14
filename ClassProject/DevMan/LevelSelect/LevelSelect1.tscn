@@ -33,21 +33,23 @@ margin_left = 978.0
 margin_top = 164.0
 margin_right = 1878.0
 margin_bottom = 364.0
-text = "Theme Park"
+text = "Theme Park "
 
 [node name="DeepSeaButton" type="Button" parent="Node"]
+visible = false
 margin_left = 40.0
 margin_top = 476.0
 margin_right = 940.0
 margin_bottom = 676.0
-text = "Deep Sea"
+text = "Deep Sea ( Under Construction )"
 
 [node name="SpaceButton" type="Button" parent="Node"]
+visible = false
 margin_left = 978.0
 margin_top = 480.0
 margin_right = 1878.0
 margin_bottom = 680.0
-text = "Space"
+text = "Space ( Under Contruction )"
 
 [node name="WithTimeButton" type="Button" parent="Node"]
 margin_left = 38.0
@@ -68,4 +70,4 @@ text = "Back"
 [connection signal="pressed" from="Node/DeepSeaButton" to="." method="_on_DeepSeaButton_pressed"]
 [connection signal="pressed" from="Node/SpaceButton" to="." method="_on_SpaceButton_pressed"]
 [connection signal="pressed" from="Node/WithTimeButton" to="." method="_on_WithTimeButton_pressed"]
-[connection signal="pressed" from="Node/BackButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="Node/BackButton" to="." method="_on_BackButton_pressed"]

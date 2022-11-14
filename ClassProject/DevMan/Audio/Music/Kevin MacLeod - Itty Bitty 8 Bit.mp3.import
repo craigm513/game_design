@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kevin MacLeod - Itty Bitty 8 Bit.mp3-90c1174704aa84527202ad80b505890e.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Kevin MacLeod - Itty Bitty 8 Bit.mp3"
+dest_files=[ "res://.import/Kevin MacLeod - Itty Bitty 8 Bit.mp3-90c1174704aa84527202ad80b505890e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
