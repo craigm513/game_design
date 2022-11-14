@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TombStone (2).png-42fdcdd4f386d752ca4d3e10d8952486.stex"
+path="res://.import/TombStone (2).png-c169c1b6c0cba22b825c097139647aab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GraveyardTileset/png/Objects/TombStone (2).png"
-dest_files=[ "res://.import/TombStone (2).png-42fdcdd4f386d752ca4d3e10d8952486.stex" ]
+source_file="res://Graveyard/GraveyardTileset/png/Objects/TombStone (2).png"
+dest_files=[ "res://.import/TombStone (2).png-c169c1b6c0cba22b825c097139647aab.stex" ]
 
 [params]
 

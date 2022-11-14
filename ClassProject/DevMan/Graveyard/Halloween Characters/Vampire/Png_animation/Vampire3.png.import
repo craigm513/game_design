@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Vampire3.png-d208630acd60c3142b3218810cff9e0d.stex"
+path="res://.import/Vampire3.png-50097347b0948efed08a2f39ad4a3d87.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Vampire/Png_animation/Vampire3.png"
-dest_files=[ "res://.import/Vampire3.png-d208630acd60c3142b3218810cff9e0d.stex" ]
+source_file="res://Graveyard/Halloween Characters/Vampire/Png_animation/Vampire3.png"
+dest_files=[ "res://.import/Vampire3.png-50097347b0948efed08a2f39ad4a3d87.stex" ]
 
 [params]
 

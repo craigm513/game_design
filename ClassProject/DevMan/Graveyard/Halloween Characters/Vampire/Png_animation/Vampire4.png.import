@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Vampire4.png-95ee3b26a0e96a23b7d11c2cbb872f55.stex"
+path="res://.import/Vampire4.png-635385e8508633091a05f53dbc9feb39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Vampire/Png_animation/Vampire4.png"
-dest_files=[ "res://.import/Vampire4.png-95ee3b26a0e96a23b7d11c2cbb872f55.stex" ]
+source_file="res://Graveyard/Halloween Characters/Vampire/Png_animation/Vampire4.png"
+dest_files=[ "res://.import/Vampire4.png-635385e8508633091a05f53dbc9feb39.stex" ]
 
 [params]
 
