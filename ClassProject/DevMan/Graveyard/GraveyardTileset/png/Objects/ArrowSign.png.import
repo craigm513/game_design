@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArrowSign.png-c9b8205785838b281886552319b0684b.stex"
+path="res://.import/ArrowSign.png-94a8915b294662b5cdc1db089e95df62.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GraveyardTileset/png/Objects/ArrowSign.png"
-dest_files=[ "res://.import/ArrowSign.png-c9b8205785838b281886552319b0684b.stex" ]
+source_file="res://Graveyard/GraveyardTileset/png/Objects/ArrowSign.png"
+dest_files=[ "res://.import/ArrowSign.png-94a8915b294662b5cdc1db089e95df62.stex" ]
 
 [params]
 

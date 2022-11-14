@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Witch3.png-21828634e6150d4ca61d0903b23324bb.stex"
+path="res://.import/Witch3.png-7d703614f338e240be0beb5ed6573185.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/Witch/Png_animation/Witch3.png"
-dest_files=[ "res://.import/Witch3.png-21828634e6150d4ca61d0903b23324bb.stex" ]
+source_file="res://Graveyard/Halloween Characters/Witch/Png_animation/Witch3.png"
+dest_files=[ "res://.import/Witch3.png-7d703614f338e240be0beb5ed6573185.stex" ]
 
 [params]
 

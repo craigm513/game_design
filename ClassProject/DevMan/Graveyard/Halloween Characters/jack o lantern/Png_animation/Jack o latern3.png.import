@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jack o latern3.png-13bf39097a61a1c8644c1224043f0c31.stex"
+path="res://.import/Jack o latern3.png-2a3bef417f9dd17cb520ee202d5447aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/jack o lantern/Png_animation/Jack o latern3.png"
-dest_files=[ "res://.import/Jack o latern3.png-13bf39097a61a1c8644c1224043f0c31.stex" ]
+source_file="res://Graveyard/Halloween Characters/jack o lantern/Png_animation/Jack o latern3.png"
+dest_files=[ "res://.import/Jack o latern3.png-2a3bef417f9dd17cb520ee202d5447aa.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bone (3).png-8d062adfb316f2497bb07d178b6d391b.stex"
+path="res://.import/Bone (3).png-4b2ade94d4ff855f6d0086d7f83d4b96.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hero/Bone (3).png"
-dest_files=[ "res://.import/Bone (3).png-8d062adfb316f2497bb07d178b6d391b.stex" ]
+source_file="res://Graveyard/Hero/Bone (3).png"
+dest_files=[ "res://.import/Bone (3).png-4b2ade94d4ff855f6d0086d7f83d4b96.stex" ]
 
 [params]
 

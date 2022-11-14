@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/163907.png-782c76db41ac7ebf1106eabc7e2f9a5f.stex"
+path="res://.import/163907.png-558708f20a5f28242e32b66967ce2872.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/163907.png"
-dest_files=[ "res://.import/163907.png-782c76db41ac7ebf1106eabc7e2f9a5f.stex" ]
+source_file="res://Graveyard/Halloween Characters/163907.png"
+dest_files=[ "res://.import/163907.png-558708f20a5f28242e32b66967ce2872.stex" ]
 
 [params]
 

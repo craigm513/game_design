@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DMJNoGun10.png-04e26933094222c75ef456da8accc3e1.stex"
+path="res://.import/DMJNoGun10.png-9068d5699c2b56629f1255e3d1ea933a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Run/DMJNoGun10.png"
-dest_files=[ "res://.import/DMJNoGun10.png-04e26933094222c75ef456da8accc3e1.stex" ]
+source_file="res://Graveyard/Run/DMJNoGun10.png"
+dest_files=[ "res://.import/DMJNoGun10.png-9068d5699c2b56629f1255e3d1ea933a.stex" ]
 
 [params]
 

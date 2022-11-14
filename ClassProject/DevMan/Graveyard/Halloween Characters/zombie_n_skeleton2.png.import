@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie_n_skeleton2.png-336ab6a2e46a08ba74a856c3ff989e31.stex"
+path="res://.import/zombie_n_skeleton2.png-57d0c4f588dfe06f659a1940f4a632cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Halloween Characters/zombie_n_skeleton2.png"
-dest_files=[ "res://.import/zombie_n_skeleton2.png-336ab6a2e46a08ba74a856c3ff989e31.stex" ]
+source_file="res://Graveyard/Halloween Characters/zombie_n_skeleton2.png"
+dest_files=[ "res://.import/zombie_n_skeleton2.png-57d0c4f588dfe06f659a1940f4a632cd.stex" ]
 
 [params]
 
