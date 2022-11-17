@@ -4,7 +4,7 @@ Jay -
 	audio from Jaedon
 
 Jaedon -
-	complete options page NLT 11/12
+	complete options page NLT 11/12 -done
 	sfx for shooting, jumping
 	boss behavior
 	
@@ -13,15 +13,18 @@ Leo -
 	add boss
 	shooting with weapon
 	sounds
-	dynamic movement in air
+	dynamic movement in air -done
 
 Cail -
 	mpg - needs? 
-	fix animations
-	finalize Victory image with level specific items
+	fix animations -partial
+	finalize Victory image -partial
 
 Craig -
-	level select screen targets
-	cheat code to Victory page
-	Create Victory page
+	level select screen targets -done
+	cheat code to Victory page -done
+	Create Victory page -done
 	
+Notes from Professor:
+Need transitions and end of levels.
+Sfx are missing, but length is good.
