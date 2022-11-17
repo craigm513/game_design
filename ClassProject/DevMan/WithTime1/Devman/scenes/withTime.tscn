@@ -39,24 +39,6 @@ collision_mask = 17
 format = 1
 tile_data = PoolIntArray( 65582, 4, 0, 65583, 5, 0, 65586, 4, 0, 65587, 2, 0, 65588, 16, 0, 65589, 16, 0, 65590, 16, 0, 65591, 5, 0, 131136, 6, 0, 196650, 4, 0, 196651, 5, 0, 196672, 0, 0, 262197, 6, 0, 262205, 6, 0, 262208, 0, 0, 327733, 0, 0, 327741, 0, 0, 327744, 0, 0, 393256, 1, 0, 393257, 2, 0, 393258, 2, 0, 393259, 2, 0, 393260, 3, 0, 393265, 4, 0, 393266, 5, 0, 393269, 0, 0, 393274, 6, 0, 393277, 0, 0, 393280, 0, 0, 458792, 0, 0, 458793, 0, 0, 458794, 0, 0, 458795, 0, 0, 458796, 0, 0, 458805, 0, 0, 458810, 0, 0, 458813, 0, 0, 458816, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524341, 0, 0, 524346, 0, 0, 524349, 0, 0, 524352, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589877, 0, 0, 589882, 0, 0, 589885, 0, 0, 589888, 0, 0 )
 
-[node name="Devman" parent="." instance=ExtResource( 2 )]
-position = Vector2( -993, 68 )
-collision_mask = 30
-
-[node name="Camera2D" type="Camera2D" parent="Devman"]
-scale = Vector2( 10, 10 )
-current = true
-limit_left = -1088
-limit_top = -500
-limit_bottom = 640
-limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-drag_margin_left = 0.3
-drag_margin_right = 0.3
-editor_draw_limits = true
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="DarkHighrise" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -104,9 +86,28 @@ shape = SubResource( 1 )
 [node name="enemies" type="Node2D" parent="."]
 
 [node name="enemy" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( -306, 195 )
 
 [node name="enemy2" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 100, 0 )
 direction = 1
+
+[node name="Devman" parent="." instance=ExtResource( 2 )]
+position = Vector2( -993, 68 )
+collision_mask = 30
+
+[node name="Camera2D" type="Camera2D" parent="Devman"]
+scale = Vector2( 10, 10 )
+current = true
+limit_left = -1088
+limit_top = -500
+limit_bottom = 640
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_right = 0.3
+editor_draw_limits = true
 
 [connection signal="body_entered" from="fallZone" to="Devman" method="_on_fallZone_body_entered"]
