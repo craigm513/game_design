@@ -86,19 +86,20 @@ radius = 150.0
 height = 619.98
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
-position = Vector2( 638, 112 )
+position = Vector2( 625, 111 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -11, 18 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 2 )
-animation = "standing"
+animation = "walk"
+frame = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -14, 10 )
+position = Vector2( -4, 8 )
 scale = Vector2( 0.1, 0.1 )
 shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 52, -10 )
