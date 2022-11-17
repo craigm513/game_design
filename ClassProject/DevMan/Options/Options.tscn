@@ -60,7 +60,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 13
+frame = 23
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
@@ -73,17 +73,11 @@ script = ExtResource( 31 )
 
 [node name="Audio" type="Node" parent="."]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Audio"]
-stream = ExtResource( 32 )
-volume_db = 15.592
-autoplay = true
-
 [node name="Audio Streams" type="Node" parent="Audio"]
 
-[node name="Music Audio Stream" type="AudioStreamPlayer" parent="Audio/Audio Streams"]
-bus = "Music"
-
 [node name="Options Sound Effect Audio Stream" type="AudioStreamPlayer" parent="Audio/Audio Streams"]
+stream = ExtResource( 32 )
+autoplay = true
 bus = "Sound Effect"
 
 [node name="Button Click Sound Effect Audio Stream" type="AudioStreamPlayer" parent="Audio/Audio Streams"]
@@ -111,7 +105,7 @@ max_value = 0.0
 step = 0.1
 script = ExtResource( 31 )
 
-[node name="Sound Effect Volume Slider3" type="HSlider" parent="Audio/Volume Sliders"]
+[node name="Sound Effect Volume Slide" type="HSlider" parent="Audio/Volume Sliders"]
 margin_left = 1007.0
 margin_top = 500.0
 margin_right = 1807.0
@@ -149,5 +143,5 @@ text = "Sfx Volume"
 
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_BackButton_pressed"]
 [connection signal="value_changed" from="Audio/Volume Sliders/Master Volume Slider" to="Audio/Volume Sliders/Master Volume Slider" method="MasterSlideChange"]
-[connection signal="value_changed" from="Audio/Volume Sliders/Music Volume Slider2" to="Audio/Volume Sliders/Music Volume Slider2" method="MasterSlideChange"]
-[connection signal="value_changed" from="Audio/Volume Sliders/Sound Effect Volume Slider3" to="Audio/Volume Sliders/Sound Effect Volume Slider3" method="MasterSlideChange"]
+[connection signal="value_changed" from="Audio/Volume Sliders/Music Volume Slider2" to="Audio/Volume Sliders/Music Volume Slider2" method="MusicSlideChange"]
+[connection signal="value_changed" from="Audio/Volume Sliders/Sound Effect Volume Slide" to="Audio/Volume Sliders/Sound Effect Volume Slide" method="SoundEffectSlideChange"]
