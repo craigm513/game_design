@@ -5,16 +5,38 @@ const SPEED = 180
 const GRAVITY = 35
 const JUMPFORCE = -1100
 
+const FIREBALL = preload("res://Graveyard/Scenes/Blast.tscn")
 func _physics_process(_delta):
 	
 	if Input.is_action_pressed("right"):
 		velocity.x = SPEED
 		$Sprite.play("walk")
 		$Sprite.flip_h = false
+		if sign($Position2D.position.x) == -1:
+			$Position2D.position.x *= -1
+		if Input.is_action_just_pressed("shoot"):
+			var fireball = FIREBALL.instance()
+			if sign($Position2D.position.x) == 1:
+				fireball.set_fireball_direction(1)
+			else:
+				fireball.set_fireball_direction(-1)
+			get_parent().add_child(fireball)
+			fireball.position = $Position2D.global_position
+			
 	elif Input.is_action_pressed("left"):
 		velocity.x = -SPEED
 		$Sprite.play("walk")
 		$Sprite.flip_h = true
+		if sign($Position2D.position.x) == 1:
+			$Position2D.position.x *= -1
+		if Input.is_action_just_pressed("shoot"):
+			var fireball = FIREBALL.instance()
+			if sign($Position2D.position.x) == -1:
+				fireball.set_fireball_direction(-1)
+			else:
+				fireball.set_fireball_direction(1)
+			get_parent().add_child(fireball)
+			fireball.position = $Position2D.global_position
 	else:
 		$Sprite.play("idle")
 		

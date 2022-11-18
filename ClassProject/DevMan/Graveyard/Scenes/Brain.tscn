@@ -8,18 +8,21 @@ radius = 150.0
 height = 800.0
 
 [node name="Devman" type="KinematicBody2D"]
+position = Vector2( 15, -7 )
 scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 10, 30 )
 frames = ExtResource( 1 )
-animation = "air"
-frame = 2
+animation = "walk"
+frame = 8
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( -50, 0 )
 shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 660, -250 )
