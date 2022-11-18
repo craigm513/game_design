@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DevManWait#22.png-7aa54629a261046d5fa2361898905628.stex"
+path="res://.import/sheet.png-5dc2e80516cc1da852f496e809e704ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MainMenu/IdleAnimation/DevManWait#22.png"
-dest_files=[ "res://.import/DevManWait#22.png-7aa54629a261046d5fa2361898905628.stex" ]
+source_file="res://Graveyard/GraveYardTilemap/sheet.png"
+dest_files=[ "res://.import/sheet.png-5dc2e80516cc1da852f496e809e704ab.stex" ]
 
 [params]
 
