@@ -49,6 +49,10 @@ run/main_scene="res://MainMenu/TitleCard/TitleCard.tscn"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://MainMenu/TitleCard/Title Card18.png"
 
+[autoload]
+
+StartUpAudio="*res://Audio/Audio Scene/StartUpAudio.tscn"
+
 [display]
 
 window/size/width=1920

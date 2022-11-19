@@ -17,7 +17,7 @@ script = ExtResource( 2 )
 position = Vector2( 10, 30 )
 frames = ExtResource( 1 )
 animation = "jumpshot"
-frame = 7
+frame = 9
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -27,5 +27,15 @@ shape = SubResource( 1 )
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 660, -250 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 9875
+limit_bottom = 1080
+smoothing_enabled = true
+smoothing_speed = 10.0
+editor_draw_limits = true
 
 [connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]

@@ -49,3 +49,6 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity,Vector2.UP)
 
 	velocity.x = lerp(velocity.x,0,0.2)
+	
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
