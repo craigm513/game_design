@@ -51,7 +51,7 @@ config/icon="res://MainMenu/TitleCard/Title Card18.png"
 
 [autoload]
 
-StartUpAudio="*res://Audio/Audio Scene/StartUpAudio.tscn"
+StartUpAudio="*res://Audio/Audio Scene/GlobalAudio.tscn"
 
 [display]
 

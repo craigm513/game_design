@@ -60,7 +60,7 @@ func _input( event: InputEvent ) -> void :
       get_tree().quit( 0 )
 "
 
-[node name="Control" type="Control"]
+[node name="MainMenu" type="Control"]
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_top = 7.0
@@ -84,7 +84,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 2
+frame = 23
 playing = true
 
 [node name="ButtonLayer" type="Node" parent="."]
