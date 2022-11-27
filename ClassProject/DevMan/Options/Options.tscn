@@ -41,7 +41,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Options" type="Node2D"]
 
 [node name="BackgroundLayer" type="Node" parent="."]
 
@@ -60,7 +60,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "IdleBlueGuy"
-frame = 23
+frame = 12
 playing = true
 
 [node name="BackButton" type="Button" parent="."]
