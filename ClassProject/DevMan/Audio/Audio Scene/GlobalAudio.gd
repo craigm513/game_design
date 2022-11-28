@@ -1,7 +1,8 @@
 extends AudioStreamPlayer
 
 var GraveyardAudio = "res://Audio/Music/GraveyardSoundtrack.wav";
-var GlobalAudio = "res://Audio/Music/PROD_BY_YOGIC_BEATS.mp3";
+var GlobalAudio = "res://Audio/Music/GlobalSoundtrack.mp3";
+var WithTimeAudio = "res://Audio/Music/WithTimeSoundtrack.wav";
 
 var audioStatus = "NULL";
 
@@ -15,6 +16,11 @@ func _process(_delta):
 		self.stream = load(GraveyardAudio)
 		audioStatus = "GraveYard";
 		self.play();
+		
+	if get_tree().current_scene.name == "withTimeLevel" and audioStatus != "WithTime":
+		self.stream = load(WithTimeAudio)
+		audioStatus = "WithTime"
+		self.play();	
 	
 	if get_tree().current_scene.name == "Options" and audioStatus != "Global":
 		self.stream = load(GlobalAudio)

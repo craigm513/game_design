@@ -6,6 +6,10 @@ const SPEED = 180
 const GRAVITY = 35
 const JUMPFORCE = -1100
 
+var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
+var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+
 func _physics_process(_delta):
 	
 	if Input.is_action_pressed("right"):
@@ -22,11 +26,14 @@ func _physics_process(_delta):
 	if not is_on_floor():
 		$Sprite.play("air")
 	
-	
+
 	velocity.y = velocity.y + GRAVITY
 	
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMPFORCE
+		audioStream.stream = load(JumpSoundEffect);
+		audioStream.play();
+		
 	
 	velocity = move_and_slide(velocity,Vector2.UP)
 
@@ -37,8 +44,10 @@ func _physics_process(_delta):
 
 
 func _on_fallZone_body_entered(body):
-	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
-	
+	audioStream.stream = load(FallSoundEffect);
+	audioStream.play();
+	yield(get_tree().create_timer(1.0), "timeout");
+	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn");
 	
 func bounce():
 	velocity.y = JUMPFORCE * 0.4

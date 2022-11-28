@@ -110,4 +110,10 @@ drag_margin_left = 0.3
 drag_margin_right = 0.3
 editor_draw_limits = true
 
+[node name="Audio" type="Node" parent="."]
+
+[node name="SoundEffect" type="Node" parent="Audio"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
+
 [connection signal="body_entered" from="fallZone" to="Devman" method="_on_fallZone_body_entered"]
