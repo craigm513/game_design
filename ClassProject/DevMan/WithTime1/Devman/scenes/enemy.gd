@@ -5,7 +5,11 @@ var velocity = Vector2()
 export var direction = -1
 export var detects_cliffs = true
 
+onready var audioStream = get_parent().get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+var EnemyDeathSoundEffect = "res://Audio/Sound Effects/EnemyDeathSoundEffect.wav";
+
 func _ready():
+	
 	if direction == 1:
 		$AnimatedSprite.flip_h = true
 	$floor_checker.position.x = $CollisionShape2D.shape.get_extents().x * direction
@@ -26,6 +30,8 @@ func _physics_process(delta):
 
 
 func _on_top_checker_body_entered(body):
+	audioStream.stream = load(EnemyDeathSoundEffect);
+	audioStream.play();	
 	$AnimatedSprite.play("squashed") 
 	speed = 0
 	set_collision_layer_bit(4,false)
