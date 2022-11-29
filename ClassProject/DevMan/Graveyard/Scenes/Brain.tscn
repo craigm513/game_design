@@ -14,9 +14,8 @@ z_index = 1
 script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( 10, 30 )
 frames = ExtResource( 1 )
-animation = "jumpshot"
+animation = "dying"
 frame = 9
 playing = true
 
@@ -38,4 +37,9 @@ smoothing_enabled = true
 smoothing_speed = 10.0
 editor_draw_limits = true
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

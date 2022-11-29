@@ -39,7 +39,10 @@ func _physics_process(_delta):
 func _on_fallZone_body_entered(body):
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 	
 	
 func bounce():
@@ -67,4 +70,7 @@ func ouch(var enemyposx):
 
 func _on_Timer_timeout():
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main

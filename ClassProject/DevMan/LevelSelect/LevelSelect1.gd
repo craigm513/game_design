@@ -4,7 +4,11 @@ extends Node
 
 func _on_GraveYardButton_pressed():
 <<<<<<< HEAD
+<<<<<<< HEAD
 	get_tree().change_scene("res://Graveyard1/KinematicBody2D.tscn")
+=======
+	get_tree().change_scene("res://Graveyard/Scenes/L1.tscn")
+>>>>>>> main
 =======
 	get_tree().change_scene("res://Graveyard/Scenes/L1.tscn")
 >>>>>>> main
