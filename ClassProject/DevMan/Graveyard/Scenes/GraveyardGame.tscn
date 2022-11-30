@@ -24,7 +24,6 @@ tile_data = PoolIntArray( 131158, 1, 0, 131159, 1, 0, 131160, 1, 0, 131161, 1, 0
 position = Vector2( 491.001, 581 )
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 1858, 617 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -32,7 +31,6 @@ __meta__ = {
 }
 
 [node name="Enemy5" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 6106, 894 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -40,7 +38,6 @@ __meta__ = {
 }
 
 [node name="Enemy6" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 9061, 914 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -55,7 +52,6 @@ __meta__ = {
 }
 
 [node name="Enemy4" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 3049, 875 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -63,7 +59,6 @@ __meta__ = {
 }
 
 [node name="Enemy2" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 925, 517 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -71,7 +66,6 @@ __meta__ = {
 }
 
 [node name="Enemy3" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 1235, 889 )
 scale = Vector2( 5, 5 )
 __meta__ = {
@@ -79,7 +73,6 @@ __meta__ = {
 }
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-visible = false
 scroll_base_scale = Vector2( 0.5, 0.5 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
