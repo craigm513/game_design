@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Graveyard/Scenes/boyzombie.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Graveyard/Scripts/boyzombie.gd" type="Script" id=2]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends AnimatedSprite
+
+var speed = 40
+var motion 
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 143.5, 205 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "idle"
+frame = 6
+playing = true
+script = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.5, 16 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 145, -181 )
+scale = Vector2( 10, 10 )
+enabled = true
+cast_to = Vector2( 0.2, 46 )
+collision_mask = 0

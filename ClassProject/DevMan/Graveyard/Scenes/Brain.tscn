@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://WithTime1/Devman/assets/player/Devman_spriteframes.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Graveyard/Scenes/GraveYardMovement.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 150.0
+height = 800.0
+
+[node name="Devman" type="KinematicBody2D"]
+position = Vector2( 15, -7 )
+scale = Vector2( 0.1, 0.1 )
+z_index = 1
+script = ExtResource( 2 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "dying"
+frame = 9
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -50, 0 )
+shape = SubResource( 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 660, -250 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 9875
+limit_bottom = 1080
+smoothing_enabled = true
+smoothing_speed = 10.0
+editor_draw_limits = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
