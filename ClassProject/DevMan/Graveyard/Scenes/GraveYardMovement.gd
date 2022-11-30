@@ -56,6 +56,10 @@ func _physics_process(_delta):
 			for i in range(get_slide_count()):
 				if "Enemy" in get_slide_collision(i).collider.name:
 					dead()
+		if get_slide_count() > 0:
+			for i in range(get_slide_count()):
+				if "boyzombie" in get_slide_collision(i).collider.name:
+					dead()
 
 	velocity.x = lerp(velocity.x,0,0.2)
 func dead():

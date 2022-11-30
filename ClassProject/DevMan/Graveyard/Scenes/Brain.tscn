@@ -20,7 +20,6 @@ frame = 9
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( -50, 0 )
 shape = SubResource( 1 )
 
@@ -31,8 +30,8 @@ position = Vector2( 660, -250 )
 current = true
 limit_left = 0
 limit_top = 0
-limit_right = 9875
-limit_bottom = 1080
+limit_right = 10000
+limit_bottom = 0
 smoothing_enabled = true
 smoothing_speed = 10.0
 editor_draw_limits = true
