@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BlastSoundEffect.mp3-5fa840efd95007d25eeb53912672d90a.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/BlastSoundEffect.mp3"
+dest_files=[ "res://.import/BlastSoundEffect.mp3-5fa840efd95007d25eeb53912672d90a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
