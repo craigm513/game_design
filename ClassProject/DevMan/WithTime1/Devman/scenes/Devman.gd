@@ -85,33 +85,28 @@ func move_and_fall():
 	velocity = move_and_slide(velocity,Vector2.UP)
 
 func _on_fallZone_body_entered(body):
+	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 	audioStream.stream = load(FallSoundEffect);
 	audioStream.play();
 	yield(get_tree().create_timer(1.0), "timeout");
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn");
-	
+
 func bounce():
 	velocity.y = JUMPFORCE * 0.4
-	
+
 func ouch(var enemyposx):
 	set_modulate(Color(1,0.3,0.3,0.3))
 	velocity.y = JUMPFORCE * 0.5
-	
+
 	if position.x < enemyposx:
 		velocity.x = -800
 	elif position.x > enemyposx:
 		velocity.x = 800
-	
+
 	Input.action_release("left")
 	Input.action_release("right")
-	
-	$Timer.start()
-		
-		
-	
-	
-	
 
+	$Timer.start()
 
 func _on_Timer_timeout():
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
