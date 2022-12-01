@@ -79,9 +79,9 @@
 [resource]
 animations = [ {
 "frames": [ ExtResource( 34 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 49 ) ],
-"loop": true,
+"loop": false,
 "name": "air",
-"speed": 7.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 69 ), ExtResource( 75 ), ExtResource( 70 ), ExtResource( 73 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 66 ), ExtResource( 74 ), ExtResource( 72 ), ExtResource( 68 ) ],
 "loop": false,
