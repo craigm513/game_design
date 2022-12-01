@@ -1,0 +1,8 @@
+It's better to have a finished game with a few levels than an incomplete game with many levels.
+
+Fix music on slash screen
+Fix Army grunts in graveyard walking below ground level
+Fix jumping speed and distance in WithTime 
+Add Exit to WithTime
+Fix spacing in Credits page
+Try to add another level
