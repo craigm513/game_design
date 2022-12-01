@@ -26,7 +26,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
 animation = "idle"
-frame = 6
+frame = 11
 playing = true
 script = SubResource( 3 )
 
@@ -34,9 +34,14 @@ script = SubResource( 3 )
 position = Vector2( -3.5, 16 )
 shape = SubResource( 2 )
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( 145, -181 )
+position = Vector2( 145, -170 )
 scale = Vector2( 10, 10 )
 enabled = true
-cast_to = Vector2( 0.2, 46 )
-collision_mask = 0
+cast_to = Vector2( -1.90735e-06, 45.9 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
