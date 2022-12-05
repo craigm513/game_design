@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 50
+var speed = 225
 var velocity = Vector2()
 export var direction = -1
 export var detects_cliffs = true
