@@ -3,11 +3,11 @@
 [ext_resource path="res://Graveyard/Scenes/Brain.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Graveyard/GraveYardTilemap/GraveYardGround.tres" type="TileSet" id=2]
 [ext_resource path="res://Graveyard/Scenes/Enemy.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Graveyard/GraveyardTileset/png/BG.png" type="Texture" id=4]
+[ext_resource path="res://Graveyard/Hero/GraveyardTileset/png/BG.png" type="Texture" id=4]
 [ext_resource path="res://Graveyard/Scenes/boyzombie.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Graveyard/Scenes/Girlzombie.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Graveyard/Scenes/Door.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Graveyard/GraveyardTileset/png/91c28a6f7bf2ac6.png" type="Texture" id=8]
+[ext_resource path="res://Graveyard/Hero/GraveyardTileset/png/91c28a6f7bf2ac6.png" type="Texture" id=8]
 
 [node name="Node2D" type="Node2D"]
 
