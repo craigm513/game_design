@@ -1,0 +1,239 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://ThemePark/Scene/ThemeparkTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://WithTime1/Devman/scenes/Devman.tscn" type="PackedScene" id=2]
+[ext_resource path="res://WithTime1/Devman/assets/background-images/dark-highrises.png" type="Texture" id=3]
+[ext_resource path="res://WithTime1/Devman/assets/background-images/green-mountains.png" type="Texture" id=4]
+[ext_resource path="res://WithTime1/Devman/assets/background-images/dead-trees.png" type="Texture" id=5]
+[ext_resource path="res://WithTime1/Devman/scenes/enemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ThemePark/cloud background/demo01_PixelSky_layer01.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7432, 67.5 )
+
+[node name="ThemeparkLevel" type="Node2D"]
+position = Vector2( 51, 37 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 4128637, 0, 0, 4128648, 0, 0, 4128659, 0, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="DarkHighrise" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -1325, -675 )
+scale = Vector2( 1.5, 2 )
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/DarkHighrise"]
+position = Vector2( 225.333, -17.5 )
+scale = Vector2( 4.36944, 5.0963 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="DarkHighrise2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( -1325, -675 )
+scale = Vector2( 1.5, 2 )
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/DarkHighrise2"]
+position = Vector2( 3854, -1.72853e-05 )
+scale = Vector2( 0.993229, 1.00486 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="DeadTrees" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 600, -675 )
+scale = Vector2( 1.5, 2 )
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/DeadTrees"]
+position = Vector2( -4.66668, 0 )
+scale = Vector2( 1.00365, 1 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="DeadTrees2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 600, -675 )
+scale = Vector2( 1.5, 2 )
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/DeadTrees2"]
+position = Vector2( 3842, 0 )
+scale = Vector2( 1.00417, 1.00625 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="GreenMountains" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 2525, -675 )
+scale = Vector2( 1.5, 2 )
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/GreenMountains"]
+position = Vector2( -3.33322, 0 )
+scale = Vector2( 0.671736, 0.67 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="fallZone" type="Area2D" parent="."]
+position = Vector2( -4203, 704 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fallZone"]
+position = Vector2( 11581, 57.5 )
+shape = SubResource( 1 )
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="enemy" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( -306, 195 )
+
+[node name="enemy10" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 1196, 232 )
+
+[node name="enemy11" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 1510, 99 )
+
+[node name="enemy12" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 1920, 101 )
+
+[node name="enemy13" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 2241, 104 )
+
+[node name="enemy14" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 2085, 106 )
+
+[node name="enemy15" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 2715, 358 )
+
+[node name="enemy16" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 3300, 40 )
+
+[node name="enemy17" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 3477, 37 )
+
+[node name="enemy18" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5764, 171 )
+
+[node name="enemy19" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5989, 34 )
+
+[node name="enemy20" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5944, 287 )
+
+[node name="enemy21" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 6081, 292 )
+
+[node name="enemy22" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 6266, 170 )
+
+[node name="enemy23" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 6519, 293 )
+
+[node name="enemy24" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 7370, 295 )
+
+[node name="enemy25" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 7588, 295 )
+
+[node name="enemy26" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 7919, 232 )
+
+[node name="enemy27" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 8240, 236 )
+
+[node name="enemy28" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 9247, 293 )
+
+[node name="enemy29" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 9089, 485 )
+
+[node name="enemy30" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 9410, 488 )
+
+[node name="enemy31" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 9734, 488 )
+
+[node name="enemy32" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 9864, 293 )
+
+[node name="enemy33" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 10232, 169 )
+
+[node name="enemy34" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 10629, 163 )
+
+[node name="enemy35" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 11014, 167 )
+
+[node name="enemy36" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 11717, 35 )
+
+[node name="enemy37" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 11834, 34 )
+
+[node name="enemy38" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 11970, 32 )
+
+[node name="enemy2" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 100, 0 )
+direction = 1
+
+[node name="enemy3" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 4490, 292 )
+direction = 1
+
+[node name="enemy4" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 4752, 169 )
+direction = 1
+
+[node name="enemy5" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5006, 40 )
+direction = 1
+
+[node name="enemy6" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5021, 296 )
+direction = 1
+
+[node name="enemy7" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 4905, 298 )
+direction = 1
+
+[node name="enemy8" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5241, 170 )
+direction = 1
+
+[node name="enemy9" parent="enemies" instance=ExtResource( 6 )]
+position = Vector2( 5503, 298 )
+direction = 1
+
+[node name="Devman" parent="." instance=ExtResource( 2 )]
+position = Vector2( -993, 68 )
+collision_mask = 30
+
+[node name="Camera2D" type="Camera2D" parent="Devman"]
+scale = Vector2( 10, 10 )
+current = true
+limit_left = -1088
+limit_top = -500
+limit_bottom = 640
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_right = 0.3
+editor_draw_limits = true
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="SoundEffect" type="Node" parent="Audio"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
+
+[connection signal="body_entered" from="fallZone" to="Devman" method="_on_fallZone_body_entered"]
