@@ -9,6 +9,8 @@ const SPEED = 135
 const GRAVITY = 28
 const JUMPFORCE = -900
 const RUNSPEED = 200
+const FIREBALL = preload("res://WithTime1/Devman/scenes/Fireball.tscn")
+
 
 var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
 var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
@@ -27,13 +29,15 @@ func _physics_process(_delta):
 				velocity.x = lerp(velocity.x,SPEED,0.1) if velocity.x < SPEED else lerp(velocity.x,SPEED,0.03)
 				$Sprite.flip_h = false
 			elif Input.is_action_pressed("left"):
-				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x < SPEED else lerp(velocity.x,-SPEED,0.03)
+				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > -SPEED else lerp(velocity.x,-SPEED,0.03)
 				$Sprite.flip_h = true
 			else:
 				# might add $Sprite.play("idle") to show no movement 
 				#if left or right isnt pressed while in air
 				velocity.x = lerp(velocity.x,0,0.2)
 			move_and_fall()
+			fire()
+			
 		States.FLOOR:
 			if not is_on_floor():
 				state = States.AIR
@@ -64,8 +68,9 @@ func _physics_process(_delta):
 				audioStream.stream = load(JumpSoundEffect);
 				audioStream.play();
 				state = States.AIR
-				
+					
 			move_and_fall()
+			fire()
 		States.LADDER:
 			pass
 		States. WALL:
@@ -79,6 +84,16 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
+
+func fire():
+	if Input.is_action_just_pressed("fire"):
+		var direction = 1 if not $Sprite.flip_h else -1
+		var f = FIREBALL.instance()
+		f.direction = direction
+		get_parent().add_child(f)
+		f.position.y = position.y
+		f.position.x = position.x + 25 * direction
+		
 
 func move_and_fall():
 	velocity.y = velocity.y + GRAVITY

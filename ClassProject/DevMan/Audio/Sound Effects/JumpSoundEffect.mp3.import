@@ -11,5 +11,5 @@ dest_files=[ "res://.import/JumpSoundEffect.mp3-41f9906d3007cc5c9fcb6f457fea5a6c
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

@@ -19,7 +19,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 22, 12 )
+extents = Vector2( 22, 0.5 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 15, 3.5 )
@@ -29,8 +29,10 @@ extents = Vector2( 27, 10 )
 
 [node name="enemy" type="KinematicBody2D"]
 collision_layer = 16
-collision_mask = 35
+collision_mask = 3
 script = ExtResource( 1 )
+direction = null
+detects_cliffs = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -38,7 +40,7 @@ animation = "crawl"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 4 )
+position = Vector2( 0, 16.5 )
 shape = SubResource( 2 )
 
 [node name="floor_checker" type="RayCast2D" parent="."]
@@ -48,7 +50,6 @@ collision_mask = 2
 
 [node name="top_checker" type="Area2D" parent="."]
 collision_layer = 16
-collision_mask = 33
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="top_checker"]
 position = Vector2( 0, -12.5 )
