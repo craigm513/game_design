@@ -14,6 +14,7 @@ const FIREBALL = preload("res://WithTime1/Devman/scenes/Fireball.tscn")
 
 var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
 var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
+var FireballSoundEffect = "res://Audio/Sound Effects/FireballSoundEffect.mp3";
 onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
 
 func _physics_process(delta):
@@ -86,6 +87,8 @@ func _physics_process(delta):
 
 func fire():
 	if Input.is_action_just_pressed("fire"):
+		audioStream.stream = load(FireballSoundEffect);
+		audioStream.play();
 		var direction = 1 if not $Sprite.flip_h else -1
 		var f = FIREBALL.instance()
 		f.direction = direction
