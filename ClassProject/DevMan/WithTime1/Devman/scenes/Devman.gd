@@ -99,11 +99,10 @@ func move_and_fall():
 	velocity = move_and_slide(velocity,Vector2.UP)
 
 func _on_fallZone_body_entered(body):
-	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 	audioStream.stream = load(FallSoundEffect);
 	audioStream.play();
 	yield(get_tree().create_timer(1.0), "timeout");
-	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn");
+	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 
 func bounce():
 	velocity.y = JUMPFORCE * 0.4
