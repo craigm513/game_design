@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/magic cliffs.wav-d0e04f564c450a0949102fb3d0410d37.sample"
+
+[deps]
+
+source_file="res://ThemePark/Magic-Cliffs-Environment/magic cliffs music/magic cliffs.wav"
+dest_files=[ "res://.import/magic cliffs.wav-d0e04f564c450a0949102fb3d0410d37.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

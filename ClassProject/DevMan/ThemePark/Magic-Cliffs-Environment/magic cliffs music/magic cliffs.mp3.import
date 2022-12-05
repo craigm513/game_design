@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/magic cliffs.mp3-8fdffed7a11e2da095258ec2b5ce33a4.mp3str"
+
+[deps]
+
+source_file="res://ThemePark/Magic-Cliffs-Environment/magic cliffs music/magic cliffs.mp3"
+dest_files=[ "res://.import/magic cliffs.mp3-8fdffed7a11e2da095258ec2b5ce33a4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
