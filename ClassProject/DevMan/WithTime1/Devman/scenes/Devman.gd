@@ -5,10 +5,10 @@ enum States {AIR = 1, FLOOR, LADDER, WALL}
 var state = States.AIR
 var velocity = Vector2(0,0)
 var coins = 0
-const SPEED = 135
-const GRAVITY = 28
+const SPEED = 360
+const GRAVITY = 34
 const JUMPFORCE = -900
-const RUNSPEED = 200
+const RUNSPEED = 500
 const FIREBALL = preload("res://WithTime1/Devman/scenes/Fireball.tscn")
 
 
@@ -16,8 +16,7 @@ var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
 var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
 onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
 
-func _physics_process(_delta):
-	print(velocity.x)
+func _physics_process(delta):
 	match state:
 		States.AIR:
 			if is_on_floor():
