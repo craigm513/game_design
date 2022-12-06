@@ -8,40 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "RigidBody2D",
-"class": "Bullet",
-"language": "GDScript",
-"path": "res://Space1/reference/player/bullet.gd"
-}, {
-"base": "Area2D",
-"class": "Coin",
-"language": "GDScript",
-"path": "res://Space1/reference/coin/coin.gd"
-}, {
-"base": "KinematicBody2D",
-"class": "Enemy",
-"language": "GDScript",
-"path": "res://Space1/reference/enemy/enemy.gd"
-}, {
-"base": "Node2D",
-"class": "MovingPlatform",
-"language": "GDScript",
-"path": "res://Space1/reference/platform/moving_platform.gd"
-}, {
-"base": "KinematicBody2D",
-"class": "Player",
-"language": "GDScript",
-"path": "res://Space1/reference/player/player.gd"
-} ]
-_global_script_class_icons={
-"Bullet": "",
-"Coin": "",
-"Enemy": "",
-"MovingPlatform": "",
-"Player": ""
-}
-
 [application]
 
 config/name="DevMan"
