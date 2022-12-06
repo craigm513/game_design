@@ -2,11 +2,11 @@
 
 [ext_resource path="res://ThemePark/Scene/ThemeparkTileset.tres" type="TileSet" id=1]
 [ext_resource path="res://WithTime1/Devman/scenes/Devman.tscn" type="PackedScene" id=2]
-[ext_resource path="res://WithTime1/Devman/assets/background-images/dark-highrises.png" type="Texture" id=3]
+[ext_resource path="res://ThemePark/Magic-Cliffs-Environment/PNG/far-grounds.png" type="Texture" id=3]
 [ext_resource path="res://WithTime1/Devman/assets/background-images/green-mountains.png" type="Texture" id=4]
 [ext_resource path="res://WithTime1/Devman/assets/background-images/dead-trees.png" type="Texture" id=5]
 [ext_resource path="res://WithTime1/Devman/scenes/enemy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://ThemePark/cloud background/demo01_PixelSky_layer01.png" type="Texture" id=7]
+[ext_resource path="res://ThemePark/Magic-Cliffs-Environment/PNG/sky.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7432, 67.5 )
@@ -18,18 +18,19 @@ position = Vector2( 51, 37 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 8, 8 )
 format = 1
-tile_data = PoolIntArray( 4128637, 0, 0, 4128648, 0, 0, 4128659, 0, 0 )
+tile_data = PoolIntArray( 4128637, 0, 0, 4128648, 0, 0, 4128659, 0, 0, 4194167, 5, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="DarkHighrise" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2( -1325, -675 )
 scale = Vector2( 1.5, 2 )
+z_index = 1
 motion_scale = Vector2( 0.6, 0.6 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/DarkHighrise"]
-position = Vector2( 225.333, -17.5 )
-scale = Vector2( 4.36944, 5.0963 )
+position = Vector2( -109.333, -17.5 )
+scale = Vector2( 160.994, 5.0963 )
 texture = ExtResource( 7 )
 centered = false
 
@@ -40,7 +41,8 @@ motion_scale = Vector2( 0.6, 0.6 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/DarkHighrise2"]
 position = Vector2( 3854, -1.72853e-05 )
-scale = Vector2( 0.993229, 1.00486 )
+scale = Vector2( 2.17208, 3.02727 )
+z_index = 1
 texture = ExtResource( 3 )
 centered = false
 

@@ -11,10 +11,12 @@ const JUMPFORCE = -900
 const RUNSPEED = 500
 const FIREBALL = preload("res://WithTime1/Devman/scenes/Fireball.tscn")
 
-
 var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
 var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
 var FireballSoundEffect = "res://Audio/Sound Effects/FireballSoundEffect.mp3";
+var LevelCompletedSoundEffect = "res://Audio/Sound Effects/Level1CompletedSoundEffect.mp3";
+var DevmanHurtSoundEffect = "res://Audio/Sound Effects/DevmanHurtSoundEffect.wav";
+
 onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
 
 func _physics_process(delta):
@@ -112,6 +114,8 @@ func bounce():
 	velocity.y = JUMPFORCE * 0.4
 
 func ouch(var enemyposx):
+	audioStream.stream = load(DevmanHurtSoundEffect);
+	audioStream.play();
 	set_modulate(Color(1,0.3,0.3,0.3))
 	velocity.y = JUMPFORCE * 0.5
 
@@ -128,6 +132,8 @@ func ouch(var enemyposx):
 func _on_Timer_timeout():
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 
-
 func _on_Door_body_entered(body):
+	audioStream.stream = load(LevelCompletedSoundEffect);
+	audioStream.play();
+	yield(get_tree().create_timer(2.0), "timeout");
 	get_tree().change_scene("res://Victory/Victory1.tscn")
