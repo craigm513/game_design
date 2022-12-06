@@ -10,9 +10,6 @@ height = 800.0
 [node name="Devman" type="KinematicBody2D"]
 scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )

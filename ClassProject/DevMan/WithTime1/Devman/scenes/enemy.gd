@@ -31,7 +31,7 @@ func _physics_process(delta):
 
 func _on_top_checker_body_entered(body):
 	audioStream.stream = load(EnemyDeathSoundEffect);
-	audioStream.play();	
+	audioStream.play();
 	$AnimatedSprite.play("squashed") 
 	speed = 0
 	set_collision_layer_bit(4,false)

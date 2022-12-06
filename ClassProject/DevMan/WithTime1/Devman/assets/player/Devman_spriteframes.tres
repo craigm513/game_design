@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=76 format=2]
+[gd_resource type="SpriteFrames" load_steps=72 format=2]
 
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-15.png" type="Texture" id=1]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-10.png" type="Texture" id=2]
@@ -12,15 +12,11 @@
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-17.png" type="Texture" id=10]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-21.png" type="Texture" id=11]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-30.png" type="Texture" id=12]
-[ext_resource path="res://WithTime1/Devman/assets/player/DevManRun/DVRun2.png" type="Texture" id=13]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-11.png" type="Texture" id=14]
-[ext_resource path="res://WithTime1/Devman/assets/player/DevManRun/DVRun4.png" type="Texture" id=15]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-26.png" type="Texture" id=16]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-23.png" type="Texture" id=17]
-[ext_resource path="res://WithTime1/Devman/assets/player/DevManRun/DVRun5.png" type="Texture" id=18]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-22.png" type="Texture" id=19]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-12.png" type="Texture" id=20]
-[ext_resource path="res://WithTime1/Devman/assets/player/DevManRun/DVRun3.png" type="Texture" id=21]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManRun/DVRun12.png" type="Texture" id=22]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-28.png" type="Texture" id=23]
 [ext_resource path="res://WithTime1/Devman/assets/player/DevManWait/DevManWait-27.png" type="Texture" id=24]
@@ -98,8 +94,8 @@ animations = [ {
 "name": "jumpshot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 21 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 40 ), ExtResource( 28 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 29 ), ExtResource( 42 ), ExtResource( 22 ), ExtResource( 25 ), ExtResource( 36 ), ExtResource( 39 ), ExtResource( 26 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ) ],
-"loop": false,
+"frames": [ ExtResource( 40 ), ExtResource( 28 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 29 ), ExtResource( 42 ), ExtResource( 22 ), ExtResource( 25 ), ExtResource( 36 ), ExtResource( 39 ), ExtResource( 26 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
 "name": "walk",
 "speed": 10.0
 } ]
