@@ -38,3 +38,9 @@ text = "Congratulations
 
 
 You are the Boss!!"
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="SoundEffect" type="Node" parent="Audio"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]

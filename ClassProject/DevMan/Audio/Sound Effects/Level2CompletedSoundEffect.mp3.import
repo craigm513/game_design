@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Level2CompletedSoundEffect.mp3-94e57a9b8f925536972c60d3e2ca6ec8.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/Level2CompletedSoundEffect.mp3"
+dest_files=[ "res://.import/Level2CompletedSoundEffect.mp3-94e57a9b8f925536972c60d3e2ca6ec8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
