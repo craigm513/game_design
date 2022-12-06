@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-
+export(String,FILE,"*.TSCN") var target_stage
 enum States {AIR = 1, FLOOR, LADDER, WALL}
 var state = States.AIR
 var velocity = Vector2(0,0)
@@ -23,7 +23,6 @@ func _physics_process(delta):
 			if is_on_floor():
 				state = States.FLOOR
 				continue
-			# the line below loops while devman is in the air, fix it to make it run once
 			$Sprite.play("air")
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1) if velocity.x < SPEED else lerp(velocity.x,SPEED,0.03)
@@ -32,8 +31,6 @@ func _physics_process(delta):
 				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > -SPEED else lerp(velocity.x,-SPEED,0.03)
 				$Sprite.flip_h = true
 			else:
-				# might add $Sprite.play("idle") to show no movement 
-				#if left or right isnt pressed while in air
 				velocity.x = lerp(velocity.x,0,0.2)
 			move_and_fall()
 			fire()
@@ -75,27 +72,31 @@ func _physics_process(delta):
 			pass
 		States. WALL:
 			pass
-
-	#velocity.y = velocity.y + GRAVITY
-	
-	#velocity = move_and_slide(velocity,Vector2.UP)
-
-	#velocity.x = lerp(velocity.x,0,0.2)
 	
 	if Input.is_action_pressed("ui_cancel"):
 		get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
 
 func fire():
-	if Input.is_action_just_pressed("fire"):
-		audioStream.stream = load(FireballSoundEffect);
-		audioStream.play();
-		var direction = 1 if not $Sprite.flip_h else -1
-		var f = FIREBALL.instance()
-		f.direction = direction
-		get_parent().add_child(f)
-		f.position.y = position.y
-		f.position.x = position.x + 25 * direction
-		
+	if Input.is_action_pressed("right"):
+		if Input.is_action_just_pressed("fire"): 
+			audioStream.stream = load(FireballSoundEffect);
+			audioStream.play();
+			var direction = 1 if not $Sprite.flip_h else -1
+			var f = FIREBALL.instance()
+			f.direction = direction
+			get_parent().add_child(f)
+			f.position.y = position.y - 25
+			f.position.x = position.x + 45 * direction if not $Sprite.flip_h else position.x + 72 * direction
+	if Input.is_action_pressed("left"):
+		if Input.is_action_just_pressed("fire"): 
+			audioStream.stream = load(FireballSoundEffect);
+			audioStream.play();
+			var direction = 1 if not $Sprite.flip_h else -1
+			var f = FIREBALL.instance()
+			f.direction = direction
+			get_parent().add_child(f)
+			f.position.y = position.y - 25
+			f.position.x = position.x + 45 * direction if not $Sprite.flip_h else position.x + 72 * direction
 
 func move_and_fall():
 	velocity.y = velocity.y + GRAVITY
@@ -126,3 +127,7 @@ func ouch(var enemyposx):
 
 func _on_Timer_timeout():
 	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
+
+
+func _on_Door_body_entered(body):
+	get_tree().change_scene("res://Victory/Victory1.tscn")
