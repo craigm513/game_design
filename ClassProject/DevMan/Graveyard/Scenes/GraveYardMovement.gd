@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 var velocity = Vector2(0,0)
-const SPEED = 180
+const SPEED = 360
 const GRAVITY = 35
-const JUMPFORCE = -1100
+const JUMPFORCE = -975
 
 var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
 var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
