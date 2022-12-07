@@ -15,6 +15,9 @@ onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPl
 const FIREBALL = preload("res://Graveyard/Scenes/Blast.tscn")
 var is_dead = false
 func _physics_process(_delta):
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
+	
 	if is_dead == false:
 		if Input.is_action_pressed("right"):
 			velocity.x = SPEED
