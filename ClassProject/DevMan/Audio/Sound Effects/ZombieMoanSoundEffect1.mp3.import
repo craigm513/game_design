@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ZombieMoanSoundEffect1.mp3-31c61ecb89b9cbe00cbb834b66b93621.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/ZombieMoanSoundEffect1.mp3"
+dest_files=[ "res://.import/ZombieMoanSoundEffect1.mp3-31c61ecb89b9cbe00cbb834b66b93621.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
