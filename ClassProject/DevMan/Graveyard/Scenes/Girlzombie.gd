@@ -8,12 +8,21 @@ var is_dead = false
 
 var velocity = Vector2()
 
+var ZombieDeathSoundEffect1 = "res://Audio/Sound Effects/BrainsSoundEffect1.mp3";
+var ZombieDeathSoundEffect2 = "res://Audio/Sound Effects/BrainsSoundEffect2.mp3";
+var ZombieDeathSoundEffect3 = "res://Audio/Sound Effects/ZombieMoanSoundEffect1.mp3";
+var ZombieDeathSoundEffect4 = "res://Audio/Sound Effects/ZombieMoanSoundEffect2.mp3";
 
+var SoundEffectArray = [ZombieDeathSoundEffect1,ZombieDeathSoundEffect2,ZombieDeathSoundEffect3,ZombieDeathSoundEffect4];
+
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
 
 func _ready():
 	pass # Replace with function body.
 
 func dead():
+	audioStream.stream = load(SoundEffectArray[randi() % 4]);
+	audioStream.play();
 	is_dead = true
 	velocity = Vector2(0,0)
 	$AnimatedSprite.play("dead")
