@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BrainsSoundEffect2.mp3-7be03da842494017c3ea2b8de8e6757c.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/BrainsSoundEffect2.mp3"
+dest_files=[ "res://.import/BrainsSoundEffect2.mp3-7be03da842494017c3ea2b8de8e6757c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -8,12 +8,16 @@ var is_dead = false
 
 var velocity = Vector2()
 
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+var EnemyDeathSoundEffect = "res://Audio/Sound Effects/SoldierDeathSoundEffect.mp3";
 
 
 func _ready():
 	pass # Replace with function body.
 
 func dead():
+	audioStream.stream = load(EnemyDeathSoundEffect);
+	audioStream.play();	
 	is_dead = true
 	velocity = Vector2(0,0)
 	$AnimatedSprite.play("dead")

@@ -9,7 +9,7 @@
 [ext_resource path="res://Graveyard/Scenes/Door.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Graveyard/Hero/GraveyardTileset/png/91c28a6f7bf2ac6.png" type="Texture" id=8]
 
-[node name="Node2D" type="Node2D"]
+[node name="GraveYardLevel" type="Node2D"]
 
 [node name="boyzombie" parent="." instance=ExtResource( 5 )]
 position = Vector2( 8587, 605 )
@@ -116,3 +116,9 @@ target_stage = "res://Victory/Victory1.tscn"
 position = Vector2( 13368, 416 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 8 )
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="SoundEffect" type="Node" parent="Audio"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
