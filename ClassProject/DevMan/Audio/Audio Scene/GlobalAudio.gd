@@ -12,9 +12,9 @@ func _ready():
 
 func _process(_delta):
 	print(get_tree().current_scene.name);
-	if get_tree().current_scene.name == "GraveYard" && audioStatus != "GraveYard":
+	if get_tree().current_scene.name == "GraveYardLevel" && audioStatus != "GraveYardLevel":
 		self.stream = load(GraveyardAudio)
-		audioStatus = "GraveYard";
+		audioStatus = "GraveYardLevel";
 		self.play();
 		
 	if get_tree().current_scene.name == "withTimeLevel" and audioStatus != "WithTime":

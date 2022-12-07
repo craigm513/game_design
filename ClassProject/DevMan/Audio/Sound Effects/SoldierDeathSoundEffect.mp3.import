@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SoldierDeathSoundEffect.mp3-786fe125f46f3ff2471984327a679bdd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/SoldierDeathSoundEffect.mp3"
+dest_files=[ "res://.import/SoldierDeathSoundEffect.mp3-786fe125f46f3ff2471984327a679bdd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

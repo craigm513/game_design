@@ -5,9 +5,19 @@ const SPEED = 180
 const GRAVITY = 35
 const JUMPFORCE = -1100
 
+var JumpSoundEffect = "res://Audio/Sound Effects/JumpSoundEffect.mp3";
+var FallSoundEffect = "res://Audio/Sound Effects/FallSoundEffect.wav";
+var FireballSoundEffect = "res://Audio/Sound Effects/FireballSoundEffect.mp3";
+var LevelCompletedSoundEffect = "res://Audio/Sound Effects/Level1CompletedSoundEffect.mp3";
+var DevmanHurtSoundEffect = "res://Audio/Sound Effects/DevmanHurtSoundEffect.wav";
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+
 const FIREBALL = preload("res://Graveyard/Scenes/Blast.tscn")
 var is_dead = false
 func _physics_process(_delta):
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().change_scene("res://LevelSelect/LevelSelect1.tscn")
+	
 	if is_dead == false:
 		if Input.is_action_pressed("right"):
 			velocity.x = SPEED
@@ -16,6 +26,8 @@ func _physics_process(_delta):
 			if sign($Position2D.position.x) == -1:
 				$Position2D.position.x *= -1
 			if Input.is_action_just_pressed("shoot"):
+				audioStream.stream = load(FireballSoundEffect);
+				audioStream.play();
 				var fireball = FIREBALL.instance()
 				if sign($Position2D.position.x) == 1:
 					fireball.set_fireball_direction(1)
@@ -31,6 +43,8 @@ func _physics_process(_delta):
 			if sign($Position2D.position.x) == 1:
 				$Position2D.position.x *= -1
 			if Input.is_action_just_pressed("shoot"):
+				audioStream.stream = load(FireballSoundEffect);
+				audioStream.play();
 				var fireball = FIREBALL.instance()
 				if sign($Position2D.position.x) == -1:
 					fireball.set_fireball_direction(-1)
@@ -49,6 +63,8 @@ func _physics_process(_delta):
 		
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = JUMPFORCE
+			audioStream.stream = load(JumpSoundEffect);
+			audioStream.play();
 		
 		velocity = move_and_slide(velocity,Vector2.UP)
 		

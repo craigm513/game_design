@@ -5,6 +5,7 @@ const SPEED = 180
 const GRAVITY = 35
 const JUMPFORCE = -1100
 const FIREBALL = preload("res://Graveyard/Scenes/Fireball.tscn")
+
 func _physics_process(_delta):
 	
 	if Input.is_action_pressed("right"):
