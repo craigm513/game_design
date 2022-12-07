@@ -116,7 +116,7 @@ func bounce():
 func ouch(var enemyposx):
 	audioStream.stream = load(DevmanHurtSoundEffect);
 	audioStream.play();
-	set_modulate(Color(1,0.3,0.3,0.3))
+	#set_modulate(Color(1,0.3,0.3,0.3))
 	velocity.y = JUMPFORCE * 0.5
 
 	if position.x < enemyposx:
@@ -130,10 +130,11 @@ func ouch(var enemyposx):
 	$Timer.start()
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
+	pass
+	#get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 
 func _on_Door_body_entered(body):
 	audioStream.stream = load(LevelCompletedSoundEffect);
 	audioStream.play();
 	yield(get_tree().create_timer(2.0), "timeout");
-	get_tree().change_scene("res://Victory/Victory1.tscn")
+	get_tree().change_scene("res://Graveyard/Scenes/GraveyardGame.tscn")
