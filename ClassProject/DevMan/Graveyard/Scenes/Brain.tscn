@@ -15,8 +15,8 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-animation = "dying"
-frame = 9
+animation = "air"
+frame = 6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -30,7 +30,7 @@ position = Vector2( 660, -250 )
 current = true
 limit_left = 0
 limit_top = 0
-limit_right = 10000
+limit_right = 13450
 limit_bottom = 0
 smoothing_enabled = true
 smoothing_speed = 10.0
