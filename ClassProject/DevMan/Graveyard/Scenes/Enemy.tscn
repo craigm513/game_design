@@ -68,7 +68,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 8, 8.5 )
+extents = Vector2( 8, 11.25 )
 
 [node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 2 )
