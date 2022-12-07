@@ -32,7 +32,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/TitleCard = SubResource( 1 )
@@ -41,7 +41,7 @@ anims/TitleCard = SubResource( 1 )
 position = Vector2( 908, 551 )
 frames = SubResource( 2 )
 animation = "TitleCard"
-frame = 4
+frame = 17
 playing = true
 script = ExtResource( 19 )
 
