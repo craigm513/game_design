@@ -19,6 +19,10 @@ var DevmanHurtSoundEffect = "res://Audio/Sound Effects/DevmanHurtSoundEffect.wav
 
 onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
 
+func _input(event):
+	if event is InputEventKey and event.scancode == KEY_H:
+	   self.position.x = 12000;
+
 func _physics_process(delta):
 	match state:
 		States.AIR:
@@ -129,12 +133,5 @@ func ouch(var enemyposx):
 
 	$Timer.start()
 
-func _on_Timer_timeout():
-	pass
-	#get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
-
 func _on_Door_body_entered(body):
-	#audioStream.stream = load(LevelCompletedSoundEffect);
-	#audioStream.play();
-	#yield(get_tree().create_timer(2.0), "timeout");
 	get_tree().change_scene("res://Graveyard/Scenes/GraveyardGame.tscn")
