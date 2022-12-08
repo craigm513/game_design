@@ -85,7 +85,7 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 1
+frame = 16
 playing = true
 
 [node name="Cotnrols" type="Sprite" parent="BackgroundLayer/CanvasLayer"]

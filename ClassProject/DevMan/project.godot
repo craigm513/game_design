@@ -18,6 +18,7 @@ config/icon="res://MainMenu/TitleCard/Title Card18.png"
 [autoload]
 
 StartUpAudio="*res://Audio/Audio Scene/GlobalAudio.tscn"
+Pause="*res://Pause/Pause.tscn"
 
 [display]
 
