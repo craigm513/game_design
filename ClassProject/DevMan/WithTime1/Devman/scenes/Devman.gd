@@ -134,7 +134,7 @@ func _on_Timer_timeout():
 	#get_tree().change_scene("res://WithTime1/Devman/scenes/withTime.tscn")
 
 func _on_Door_body_entered(body):
-	audioStream.stream = load(LevelCompletedSoundEffect);
-	audioStream.play();
-	yield(get_tree().create_timer(2.0), "timeout");
+	#audioStream.stream = load(LevelCompletedSoundEffect);
+	#audioStream.play();
+	#yield(get_tree().create_timer(2.0), "timeout");
 	get_tree().change_scene("res://Graveyard/Scenes/GraveyardGame.tscn")
