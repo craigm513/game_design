@@ -21,53 +21,27 @@ anchor_mode = 0
 [node name="Node" type="Node" parent="."]
 
 [node name="GraveYardButton" type="Button" parent="Node"]
-margin_left = 42.0
+margin_left = 500.0
 margin_top = 168.0
-margin_right = 942.0
+margin_right = 1400.0
 margin_bottom = 368.0
 text = "Graveyard"
 icon = SubResource( 1 )
 
-[node name="ThemeParkButton" type="Button" parent="Node"]
-margin_left = 978.0
-margin_top = 164.0
-margin_right = 1878.0
-margin_bottom = 364.0
-text = "Theme Park "
-
-[node name="DeepSeaButton" type="Button" parent="Node"]
-visible = false
-margin_left = 40.0
-margin_top = 476.0
-margin_right = 940.0
-margin_bottom = 676.0
-text = "Deep Sea ( Under Construction )"
-
-[node name="SpaceButton" type="Button" parent="Node"]
-visible = false
-margin_left = 978.0
-margin_top = 480.0
-margin_right = 1878.0
-margin_bottom = 680.0
-text = "Space ( Under Contruction )"
-
 [node name="WithTimeButton" type="Button" parent="Node"]
-margin_left = 38.0
-margin_top = 758.0
-margin_right = 938.0
-margin_bottom = 958.0
+margin_left = 500.0
+margin_top = 450.0
+margin_right = 1400.0
+margin_bottom = 650.0
 text = "With Time"
 
 [node name="BackButton" type="Button" parent="Node"]
-margin_left = 970.0
+margin_left = 500.0
 margin_top = 758.0
-margin_right = 1870.0
+margin_right = 1400.0
 margin_bottom = 958.0
 text = "Back"
 
 [connection signal="pressed" from="Node/GraveYardButton" to="." method="_on_GraveYardButton_pressed"]
-[connection signal="pressed" from="Node/ThemeParkButton" to="." method="_on_ThemeParkButton_pressed"]
-[connection signal="pressed" from="Node/DeepSeaButton" to="." method="_on_DeepSeaButton_pressed"]
-[connection signal="pressed" from="Node/SpaceButton" to="." method="_on_SpaceButton_pressed"]
 [connection signal="pressed" from="Node/WithTimeButton" to="." method="_on_WithTimeButton_pressed"]
 [connection signal="pressed" from="Node/BackButton" to="." method="_on_BackButton_pressed"]
