@@ -27,10 +27,7 @@ var credits = [
 		"Main Character Art",
 		"",
 		"Cail Keeling"        
-	],[
-		"Theme park level design",
-		"",
-		"Jaedon Waller"
+
 	],[
 		"Graveyard level design",
 		"",
@@ -43,6 +40,7 @@ var credits = [
 		"Character movement and game physics",
 		"",
 		"Leonardo Hernandez", 
+		"",
 		"Ja\'lun Morris"
 	],[
 		"Main Menu, Level Select, Victory and Credits",
@@ -55,7 +53,38 @@ var credits = [
 	],[
 		"Online resources from",
 		"",
+		"",
 		"www.spriters-resource.com"
+		
+	],[
+		"Music and Sfx Credits",
+		"",
+		"",
+		"Blast Sound Effect - Creator Assets",
+		"",
+		"",
+		"Global Sound Track - Yogic Beats",
+		"",
+		"",
+		"Jump Sound Effect - Creator Assets",
+		"",
+		"",
+		"With Time Enemy Sound Effects - Creator Assets",
+		"",
+		"",
+		"Graveyard Sound Track- Panda Beats",
+		"",
+		"",
+		"Devman Hurt Effect - NE Sounds",
+		"",
+		"",
+		"Graveyard Enemy Sound Effects - Fesliyan Studios",
+		"",
+		"",
+		"Victory Music - LukRembo",
+		"",
+		"",
+		"Victory Cheers - Mixkit"
 		
 	],[
 		"Thanks for playing!"
