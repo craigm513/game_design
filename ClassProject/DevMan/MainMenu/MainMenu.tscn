@@ -45,7 +45,7 @@ animations = [ {
 script/source = "extends Control
 
 func _on_StartButton_pressed():
-    get_tree().change_scene(\"res://LevelSelect/LevelSelect1.tscn\")
+    get_tree().change_scene(\"res://WithTime1/Devman/scenes/withTime.tscn\")
 
 func _on_OptionsButton_pressed():
     get_tree().change_scene(\"res://Options/Options.tscn\")
