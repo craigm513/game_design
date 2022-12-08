@@ -8,9 +8,8 @@ var is_dead = false
 
 var velocity = Vector2()
 
-onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/EnemyAudio");
 var EnemyDeathSoundEffect = "res://Audio/Sound Effects/SoldierDeathSoundEffect.mp3";
-
 
 func _ready():
 	pass # Replace with function body.

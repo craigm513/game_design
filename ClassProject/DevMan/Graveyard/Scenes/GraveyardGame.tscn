@@ -122,3 +122,5 @@ texture = ExtResource( 8 )
 [node name="SoundEffect" type="Node" parent="Audio"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
+
+[node name="EnemyAudio" type="AudioStreamPlayer" parent="Audio/SoundEffect"]

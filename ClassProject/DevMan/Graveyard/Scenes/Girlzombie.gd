@@ -15,7 +15,7 @@ var ZombieDeathSoundEffect4 = "res://Audio/Sound Effects/ZombieMoanSoundEffect2.
 
 var SoundEffectArray = [ZombieDeathSoundEffect1,ZombieDeathSoundEffect2,ZombieDeathSoundEffect3,ZombieDeathSoundEffect4];
 
-onready var audioStream = get_parent().get_node("Audio/SoundEffect/AudioStreamPlayer");
+onready var audioStream = get_parent().get_node("Audio/SoundEffect/EnemyAudio");
 
 func _ready():
 	pass # Replace with function body.

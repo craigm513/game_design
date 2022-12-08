@@ -79,6 +79,8 @@ func _physics_process(_delta):
 
 	velocity.x = lerp(velocity.x,0,0.2)
 func dead():
+	audioStream.stream = load(FallSoundEffect);
+	audioStream.play();
 	is_dead = true
 	velocity = Vector2(0,0)
 	$Sprite.play("dying")

@@ -248,6 +248,8 @@ direction = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
 
+[node name="EnemyAudio" type="AudioStreamPlayer" parent="Audio/SoundEffect"]
+
 [node name="Door" type="Area2D" parent="."]
 position = Vector2( 11840, 141 )
 collision_layer = 64
