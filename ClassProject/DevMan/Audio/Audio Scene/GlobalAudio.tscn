@@ -9,3 +9,5 @@
 stream = ExtResource( 1 )
 bus = "Music"
 script = ExtResource( 2 )
+
+[node name="CheerAudioStream" type="AudioStreamPlayer" parent="."]
