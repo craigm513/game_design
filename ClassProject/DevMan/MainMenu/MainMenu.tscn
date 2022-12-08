@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#1.png" type="Texture" id=1]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#2.png" type="Texture" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#29.png" type="Texture" id=29]
 [ext_resource path="res://MainMenu/IdleAnimation/DevManWait#30.png" type="Texture" id=30]
 [ext_resource path="res://Audio/Sound Effects/MainMenuAudio.wav" type="AudioStream" id=31]
+[ext_resource path="res://MainMenu/Controls/Cotnrols.png" type="Texture" id=32]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -84,8 +85,13 @@ position = Vector2( 431, 573 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "IdleBlueGuy"
-frame = 20
+frame = 4
 playing = true
+
+[node name="Cotnrols" type="Sprite" parent="BackgroundLayer/CanvasLayer"]
+position = Vector2( 1518, 571 )
+scale = Vector2( 0.713187, 0.738775 )
+texture = ExtResource( 32 )
 
 [node name="ButtonLayer" type="Node" parent="."]
 
